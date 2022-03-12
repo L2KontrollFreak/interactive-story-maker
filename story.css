@@ -1,0 +1,38 @@
+body{
+    background-color: springgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+h1{
+    padding: 2vw;
+    font-size: 4em;
+    white-space: pre-wrap;
+    display: center;
+}
+
+h2{
+    font-size: 1em;
+
+}
+button{
+    font-size: 20px;
+    display: block;
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+    color: black;
+    background: springgreen;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: darkcyan;
+}
+button:hover{
+    background-color: darkcyan;
+    color: whitesmoke;
+}
+#clickButtonArea{
+    display: flex;
+    justify-content: space-around;
+}
