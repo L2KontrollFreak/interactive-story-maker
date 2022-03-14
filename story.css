@@ -1,5 +1,5 @@
 body{
-    background-color: springgreen;
+    background-color: lightseagreen;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
@@ -22,14 +22,14 @@ button{
     max-height: 150px;
     margin: auto;
     color: black;
-    background: springgreen;
+    background: lightcyan;
     cursor: pointer;
     border-radius: 2px;
     padding: 10px;
-    box-shadow: darkcyan;
+    box-shadow: rgb(0, 99, 99);
 }
 button:hover{
-    background-color: darkcyan;
+    background-color: darkslategrey;
     color: whitesmoke;
 }
 #clickButtonArea{
