@@ -1,11 +1,12 @@
 window.onload = function(){
-    var story = { 
-    }
+    var story = {
+     
+    
         opener: {
-            text:"Your in the world of Max Steel. You are Max McGraph who moved in to a new town because his mom new jobs in DrazTech. Max goes to a new school called Jolly Time highschool and you figure out that Max isn't your ordinary teenager. Max meets his uncle and finds out the truth about his superpowers. He has to prove he is worthy and responsibile in order to prove he is a good hero to society. It's up to you"
-            options:[["Go to Jolly Town", "GO to the School"]],
-               
-
+            text:"Your in the world of Max Steel. You are Max McGraph who moved in to a new town because his mom new jobs in DrazTech. Max goes to a new school called Jolly Time highschool and you figure out that Max isn't your ordinary teenager. Max meets his uncle and finds out the truth about his superpowers. He has to prove he is worthy and responsibile in order to prove he is a good hero to society. It's up to you",
+            options:[["Go to Jolly Town", "GO to the School"]]
+        }
+    }    
 var playerOptions = ["opener"];
 
 var m = document.getElementById("touch");
@@ -13,13 +14,13 @@ var restart = document.getElementById("restart");
 var playTimeArea = document.getElementById("playTimeArea");
 var clickButtonArea = document.getElementById("clickButtonArea");
 
-function craftButton(text,choice){// craftbutton is the text for each choice you choose
+function craftButton(text,options){// craftbutton is the text for each choice you choose
     var button = document.createElement("button");
     button.innerHTML= text;
     clickButtonArea.appendChild(button);
 
     button.addEventListener("click", function(){// click is for the button
-        playerOptions.push(choice);
+        playerOptions.push(options);
         craftStory();
         window.scrollTo({top: 0, behavior: 'smooth'});// basically scroll up with smooth transition
 });
