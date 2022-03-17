@@ -1,38 +1,86 @@
 body{
-    background-color: lightseagreen;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-}
-
-h1{
-    padding: 2vw;
-    font-size: 4em;
-    white-space: pre-wrap;
-    display: center;
-}
-
-h2{
-    font-size: 1em;
-
-}
-button{
+    height: 100%;
+    margin: 0;
+    background-color: darkcyan;
+    background: mediumaquamarine;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 20px;
-    display: block;
-    max-width: 150px;
-    max-height: 150px;
-    margin: auto;
-    color: black;
-    background: lightcyan;
-    cursor: pointer;
-    border-radius: 2px;
-    padding: 10px;
-    box-shadow: rgb(0, 99, 99);
+    letter-spacing: .9px;
+    font-weight: 500;
+    color: teal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-button:hover{
-    background-color: darkslategrey;
-    color: whitesmoke;
-}
-#clickButtonArea{
+.container{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    max-width: 800px;
+    height: 600px;
+    padding: 1em;
+}
+form p{
+    margin-bottom: 14px;
+    font-size: 1.125em;
+    line-height: 29px;
+}
+form fieldset{
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+}
+form button{
+    font-size: 1.125em;
+    background-color: transparent ;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: .9px;
+    padding: .4em 1em;
+    text-decoration: none;
+}
+
+form button:hover,
+form button:focus{
+    background-color: mediumseagreen;
+    color: springgreen;
+}
+form button {
+    float:right;
+}
+button.reset{
+    background-color: transparent;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: .9px;
+}
+button.reset:hover{color: mediumspringgreen;}
+form label span {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    padding: 10px 15px;
+    border: 1px solid mediumspringgreen;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+form label:hover span, form label:focus span{
+    border: 1px solid mediumspringgreen;
+    background-color: teal ;
+    color: seagreen;
+}
+form input[type=radio]{
+    visibility: hidden;
+}
+form input[type=radio]:checked + span{
+    border: 1px solid mediumspringgreen;
+    background-color: teal;
+    color: seagreen;
 }
