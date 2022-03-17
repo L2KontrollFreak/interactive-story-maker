@@ -111,3 +111,8 @@ var answer = '';
      },
 
 }
+//link continue
+submit.addEventListener('mouseup') function(){
+  answer = form.querySelcotorAll('input[type=radio]:checked')[0].value;
+  
+}
