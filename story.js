@@ -68,7 +68,7 @@ submit.addEventListener('mouseup', function () { //when a button on a pointing d
     if (answer) {
         story++;//increment or add 1 to
         populateForm(story + '_' + answer);//if a radio is checked populate our form with the answer
-        console.log("Story time!"); // Console log to make sure things are working
+        console.log("Story time!"); // Console log to make sure things are working in place
     }
 });
 
@@ -79,7 +79,7 @@ function resetForm() {
 
 // Generate answers from story
 function populateForm(story) {
-    var current_story = story_tell[story];//take values from story_telling story
+    var current_story = story_tell[story];//take values from story_tell story
     var text = '';
 
     for (var prop in current_story['answers']) {
