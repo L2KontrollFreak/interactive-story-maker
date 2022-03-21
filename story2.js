@@ -59,12 +59,12 @@ var story_tell = {
     "6_a": {
         "dialogue": "after he bonds with the alien name steel <br> max ask steel a question <br> are you good or evil? <br> steel says I don't know to be honest some people are worth saving some aren't worth saving <br> max says so your basically anti-hero <br> they said its up to us to decide their faith who lives or died",
         "answers": {
-            "b": "Next page",
+            "b": "Next page to se the no side",
 
         }
     },
     "7_a": {
-        "dialogue": "",
+        "dialogue": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out about max powers then talks to her brother ferris <br> tells max the orgin of his powers <br> Max only think about power and not responsibilty <br> they do a lie diector test on him",
         "answers": {
             "c": "Next page",
         }
