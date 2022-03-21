@@ -4,7 +4,7 @@ var submit = document.getElementById('continueButton');
 var reset = document.getElementById('resetButton');
 var answer = '';
 
-//Good Side
+//Evil Side
 
 var story_tell = {
     "start": {
@@ -57,18 +57,18 @@ var story_tell = {
         },
     },
     "6_a": {
-        "dialogue": "what is this round shape?<br>this is a project your dad has been working on <br>meets steel and want to bond max to keep him from expoloding <br> max says yes and bonds with him",
+        "dialogue": "after he bonds with the alien name steel <br> max ask steel a question <br> are you good or evil? <br> steel says I don't know to be honest some people are worth saving some aren't worth saving <br> max says so your basically anti-hero <br> they said its up to us to decide their faith who lives or died",
         "answers": {
             "b": "Next page",
 
         }
     },
-"7_a": {
-    "dialogue": "next day ealry morning <br> Max test out his new powers <br> while testing his new found power he  meets a enemy <br> what are you? max saids <br> the unkown enemy says: I'm elementor!!! <br> max saids you're looking for a fight are you? <br> Elementor said YES!!! <br> They begin the fight <br> Max and Steel take the beating but wins the fight <br> He's Earth champion and defender. he is Max Steel!!!",
+    "7_a": {
+        "dialogue": "",
         "answers": {
-        "c": "Next page",
+            "c": "Next page",
         }
-},
+    },
 }
 // continue link
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
