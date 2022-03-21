@@ -43,14 +43,14 @@ var story_tell = {
         "dialogue": "goe to see his uncle but something unexpected happen <br> explode this unknown energy in a abandoned building  or hold it in as long as he could ",
         "answers": {
             "a": "Yes:choose to explode in a abandoned building <br> and pass out from the explosion <br> wakes up",
-            "b": "No:max choose to hold it in as long as he could <br> then he's pass out <br> wake up"
+            "b": "No:max choose to hold it in as long as he could <br> then he's pass out <br> wake up",
         }
     },
 
     "4_a": {
         "dialogue": "Max meets his uncle named Ferris in a secret building <br> Max: hey unc where am I? <br> we are in N-tech inc  max?",
         "answers":{
-            "a": "next"
+            "a": "next",
         }
     },
     "5_a":{
@@ -58,8 +58,15 @@ var story_tell = {
         "answers":{
          "a": "yes and follow him to know what's happening to him",        
          "b": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out  about max powers then talks to her brother ferris <br> tells max the orgin of his powers.<br> max freaks out abour his orgin <br>thats his dad is a alien from a anothor planet <br> doesn't feel like he belongs <br> max moves away to try to find out the truth <br>  max learns to accept who he is <br> max stays as a normal kid and never became a hero <br> max never fought badguys but has steel to keep his T.U.R.B.O. Energy in check <br> he's graudates from HighSchool and has a girlfriend later in his life "
-        }    
-
+        },    
+        // transition
+        "6_a":{
+            "dialogue": "see a odd looking object. <br> what is this round shape? <br> this is a project your dad has been working on <br> the project broke out because it sense some energy in max. max says yes and bonds with him",
+            "answers":{
+               "a": "next",
+            }
+             
+        }
     }
 };
 // continue link
