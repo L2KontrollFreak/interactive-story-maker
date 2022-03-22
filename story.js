@@ -8,6 +8,12 @@ var answer = '';
 
 var story_tell = {
     "start": {
+        "dialogue": " You're in the world of Max Steel <br> You are Max McGraph who moved in to a new town because his mom new jobs in DrazTech <br> Max goes to a new school called Jolly Time highschool and you figure out that Max isn't your ordinary teenager <br> Max meets his uncle and finds out the truth about his superpowers<br> He has to prove he is worthy and responsibile in order to prove he is a good hero to society <br> It's up to you...",
+        "answers": {
+            "a": " next page",
+        }
+    },
+    "0_a": {
         "dialogue": "max goes to a new town",
         "answers": {
             "a": "yes:put stuff away and helps his mom put stuff away",
@@ -16,7 +22,8 @@ var story_tell = {
 
         }
     },
-    //test
+
+    // first chapter
     "1_a": {
         "dialogue": "Goes to school",
         "answers": {
@@ -56,20 +63,39 @@ var story_tell = {
             "b": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out  about max powers then talks to her brother ferris <br> tells max the orgin of his powers.<br> max freaks out abour his orgin <br>thats his dad is a alien from a anothor planet <br> doesn't feel like he belongs <br> max moves away to try to find out the truth <br>  max learns to accept who he is <br> max stays as a normal kid and never became a hero <br> max never fought badguys but has steel to keep his T.U.R.B.O. Energy in check <br> he's graudates from HighSchool and has a girlfriend later in his life ",
         },
     },
+    // transition to the yes side 
     "6_a": {
-        "dialogue": "what is this round shape?<br>this is a project your dad has been working on <br>meets steel and want to bond max to keep him from expoloding <br> max says yes and bonds with him",
+        "dialogue": "see a odd looking object <br>what is this round shape?<br>this is a project your dad has been working on <br>meets steel and want to bond max to keep him from expoloding <br> max says yes and bonds with him",
         "answers": {
             "b": "Next page",
 
         }
     },
-"7_a": {
-    "dialogue": "next day ealry morning <br> Max test out his new powers <br> while testing his new found power he  meets a enemy <br> what are you? max saids <br> the unkown enemy says: I'm elementor!!! <br> max saids you're looking for a fight are you? <br> Elementor said YES!!! <br> They begin the fight <br> Max and Steel take the beating but wins the fight <br> He's Earth champion and defender. he is Max Steel!!!",
+    "7_a": {
+        "dialogue": "next day ealry morning <br> Max test out his new powers <br> while testing his new found power he  meets a enemy <br> what are you? max saids <br> the unkown enemy says: I'm elementor!!! <br> max saids you're looking for a fight are you? <br> Elementor said YES!!! <br> They begin the fight <br> Max and Steel take the beating but wins the fight <br> He's Earth champion and defender. he is Max Steel!!!",
         "answers": {
-        "c": "Next page",
+            "c": "Next page",
         }
-},
-}
+    },
+    // transition to the no side
+    "8_a": {
+        "dialogue": "no and wants to go home <br>goes home <br>talk to his mom about it <br>mom finds out  about max powers then talks to her brother ferris <br>tells max the orgin of his powers.<br>",
+            "answers": {
+                "a": "Next page",
+            }
+        },
+        // transition to the max is freaking out
+        "9_a": {
+            "dialogue": "max freaks out abour his orgin<br><br>doesn't feel like he belongs <br>thats his dad is a alien from a anothor planet<br>doesn't feel like he belongs<br>max moves away to try to find out the truth<br><br>max learns to accept who he is<br>max stays as a normal kid and never became a hero<br>max never fought badguys but has steel to keep his T.U.R.B.O. Energy in check<br>he's graudates from HighSchool and has a girlfriend later in his life",
+            "answers":{
+                "a": " next page",
+            }
+        },
+        // the end page
+        "10_a":{
+            "dialogue": "thank you for your success on this hero journey!",
+        }
+    }
 // continue link
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
     answer = form.querySelectorAll('input[type=radio]:checked')[0].value; //a list of the document's elements that match the specified group of selectors.
@@ -83,7 +109,7 @@ submit.addEventListener('mouseup', function () { //when a button on a pointing d
 // Reset button
 function resetForm() {
     document.getElementById("restartButton").reset();
-}
+};
 
 // Generate answers from story
 function populateForm(story) {
