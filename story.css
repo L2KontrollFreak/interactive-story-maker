@@ -60,7 +60,7 @@ button.reset{
     font-size: 20px;
     letter-spacing: .9px;
 }
-button.reset:hover{color: mediumspringgreen;}
+button.reset:hover{color: aquamarine;}
 form label span {
     display: block;
     box-sizing: border-box;
