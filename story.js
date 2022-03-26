@@ -79,20 +79,12 @@ var story_tell = {
     },
     // transition to the no side
     "8_a": {
-        "dialogue": "no and wants to go home <br>goes home <br>talk to his mom about it <br>mom finds out  about max powers then talks to her brother ferris <br>tells max the orgin of his powers.<br>",
+        "dialogue": "no and wants to go home <br>goes home <br>talk to his mom about it <br>mom finds out  about max powers then talks to her brother ferris <br>tells max the orgin of his powers.<br> max freaks out abour his orgin<br><br>doesn't feel like he belongs <br>thats his dad is a alien from a anothor planet<br>doesn't feel like he belongs<br>max moves away to try to find out the truth<br><br>max learns to accept who he is<br>max stays as a normal kid and never became a hero<br>max never fought badguys but has steel to keep his T.U.R.B.O. Energy in check<br>he's graudates from HighSchool and has a girlfriend later in his life",
             "answers": {
                 "a": "Next page",
             }
         },
-        // transition to the max is freaking out
-        "9_a": {
-            "dialogue": "max freaks out abour his orgin<br><br>doesn't feel like he belongs <br>thats his dad is a alien from a anothor planet<br>doesn't feel like he belongs<br>max moves away to try to find out the truth<br><br>max learns to accept who he is<br>max stays as a normal kid and never became a hero<br>max never fought badguys but has steel to keep his T.U.R.B.O. Energy in check<br>he's graudates from HighSchool and has a girlfriend later in his life",
-            "answers":{
-                "a": " next page",
-            }
-        },
-        // the end page
-        "10_a":{
+        "9_a":{
             "dialogue": "thank you for your success on this hero journey!",
         }
     }
