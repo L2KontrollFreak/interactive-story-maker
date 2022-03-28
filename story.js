@@ -7,12 +7,16 @@ var answer = '';
 //Good Side
 
 var story_tell = {
+    // create a intro dialogue
     "start": {
         "dialogue": " You're in the world of Max Steel <br> You are Max McGraph who moved in to a new town because his mom new jobs in DrazTech <br> Max goes to a new school called Jolly Time highschool and you figure out that Max isn't your ordinary teenager <br> Max meets his uncle and finds out the truth about his superpowers<br> He has to prove he is worthy and responsibile in order to prove he is a good hero to society <br> It's up to you...",
         "answers": {
-            "a": " next page",
+            // create a automatically answer for the user
+            "a": "next page",
         }
+        // first chapter
     },
+    
     "0_a": {
         "dialogue": "max goes to a new town",
         "answers": {
@@ -23,7 +27,6 @@ var story_tell = {
         }
     },
 
-    // first chapter
     "1_a": {
         "dialogue": "Goes to school",
         "answers": {
@@ -84,9 +87,13 @@ var story_tell = {
                 "a": "Next page",
             }
         },
-        "9_a":{
-            "dialogue": "thank you for your success on this hero journey!",
-        }
+        // create a end of story
+        "9_a": {
+            "dialogue": "end of story <br> thank you for your success on this hero journey!",
+            "answers": {
+                "a": "Next page",
+            }
+        },
     }
 // continue link
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
