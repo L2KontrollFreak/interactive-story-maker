@@ -68,7 +68,7 @@ var story_tell = {
     },
     // transition to the yes side 
     "6_a": {
-        "dialogue": "see a odd looking object <br>what is this round shape?<br>this is a project your dad has been working on <br>meets steel and want to bond max to keep him from expoloding <br> max says yes and bonds with him",
+        "dialogue": "Sees an odd looking object <br>what is this round shape?<br>this is a project your dad has been working on <br>meets steel and want to bond max to keep him from expoloding <br> max says yes and bonds with him",
         "answers": {
             "b": "Next page",
 
