@@ -33,17 +33,17 @@ evilStory_Tell = {
         }
     },
     "3_a": {
-        "dialogue": "Max sees someone getting bullied <br> Meets a guy name Kirby",
+        "dialogue": "Max notices that someone is being bullied. Kirby, a young man, is the first person he meets.",
         "answers": {
             // decision
-            "a": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home ",
-            "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
+            "a": "Yes, put an end to the bullying and assist the student. Max takes him on a walk from school to his house.",
+            "b": "No, don't do it; you'll regret this decision. He checks on the man to see if he's all right, but later discovers that he's bruised.",
             "c": "netural: just stand there do nothing",
         }
 
     },
     "4_a": {
-        "dialogue": "Kirby thanks max for standing up for him because he was ok with it and he didn't want to fight so he chose to stay calm",
+        "dialogue": "Kirby thanks Max for standing up for him, explaining that he was fine with it and didn't want to fight, so he chose to stay calm. Max is pleased to see Kirby and his companions, but he is disappointed to see them depart. Max is saddened by the departure of his friends.",
         "answers": {
             "a": "Next page",
         }
@@ -70,7 +70,7 @@ evilStory_Tell = {
         "answers": {
             // decision shou;d max follow uncle ferris
             "a": "yes and follow him to know what's happening to him",
-            "b": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out  about max powers then talks to her brother ferris <br> tells max the origin of his powers.<br> max freaks out about his origin <br>that's his dad is a alien from a another planet <br> doesn't feel like he belongs <br> max moves away to try to find out the truth <br>  max learns to accept who he is <br> max stays as a normal kid and never became a hero <br> Max never fought bad guys but has steel to keep his T.U.R.B.O. Energy in check <br> he's graduates from HighSchool and has a girlfriend later in his life ",
+            "b": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out  about max powers then talks to her brother ferris <br> tells max the origin of his powers.<br> max freaks out about his origin <br>that's his dad is a alien from a another planet <br> doesn't feel like he belongs <br> max moves away to try to find out the truth <br>  max learns to accept who he is <br> max stays as a normal kid and never became a hero <br> Max never fought bad guys but has steel to keep his T.U.R.B.O. Energy in check <br> he's graduates from High School and has a girlfriend later in his life ",
         },
     },
     // transition
