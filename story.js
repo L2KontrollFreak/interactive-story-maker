@@ -6,24 +6,23 @@ var answer = '';
 
 //Good Side
 
-var story_tell = {
+story_tell = {
     // create a intro dialogue
     "start": {
         "dialogue": " You're in the world of Max Steel <br> You are Max McGraph who moved in to a new town because his mom new jobs in DrazTech <br> Max goes to a new school called Jolly Time highschool and you figure out that Max isn't your ordinary teenager <br> Max meets his uncle and finds out the truth about his superpowers<br> He has to prove he is worthy and responsibile in order to prove he is a good hero to society <br> It's up to you...",
         "answers": {
-            // create a automatically answer for the user
             "a": "next page",
         }
-        // first chapter
     },
-    
+    // start of a new page
     "0_a": {
         "dialogue": "max goes to a new town",
         "answers": {
+            // decision
             "a": "yes:put stuff away and helps his mom put stuff away",
             "b": "Neutral: doesn't finish cleaning up",
             "c": "no:don't put stuff away in his room and Be lazy",
-
+            "a": "Next page",
         }
     },
 
@@ -70,14 +69,14 @@ var story_tell = {
     "6_a": {
         "dialogue": "Sees an odd looking object <br>what is this round shape?<br>this is a project your dad has been working on <br>meets steel and want to bond max to keep him from expoloding <br> max says yes and bonds with him",
         "answers": {
-            "b": "Next page",
+            "a": "Next page",
 
         }
     },
     "7_a": {
         "dialogue": "next day ealry morning <br> Max test out his new powers <br> while testing his new found power he  meets a enemy <br> what are you? max saids <br> the unkown enemy says: I'm elementor!!! <br> max saids you're looking for a fight are you? <br> Elementor said YES!!! <br> They begin the fight <br> Max and Steel take the beating but wins the fight <br> He's Earth champion and defender. he is Max Steel!!!",
         "answers": {
-            "c": "Next page",
+            "a": "Next page",
         }
     },
     // transition to the no side
@@ -92,8 +91,8 @@ var story_tell = {
             "dialogue": "end of story <br> thank you for your success on this hero journey!",
             "answers": {
                 "a": "Next page",
-            }
-        },
+            },
+        }
     }
 // continue link
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
