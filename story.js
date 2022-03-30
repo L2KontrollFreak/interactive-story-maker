@@ -35,7 +35,7 @@ story_tell = {
         }
     },
     "2_a": {
-        "dialogue": "Max sees someone getting bullied <br> Meets a guy name Kirby",
+        "dialogue": "Max notices a victim of bullying. Kirby is a guy he meets",
         "answers": {
             "a": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home ",
             "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
@@ -45,7 +45,7 @@ story_tell = {
     },
 
     "3_a": {
-        "dialogue": "goes to see his uncle but something unexpected happen <br> explode this unknown energy in a abandoned building  or hold it in as long as he could ",
+        "dialogue": "When he visits his uncle, something unexpected occurs. <br> This unknown energy either explodes in an abandoned building or he manages to keep it contained for as long as he can. ",
         "answers": {
             "a": "Yes:choose to explode in a abandoned building <br> and pass out from the explosion <br> wakes up",
             "b": "No:max choose to hold it in as long as he could <br> then he's pass out <br> wake up",
@@ -53,13 +53,13 @@ story_tell = {
     },
 
     "4_a": {
-        "dialogue": "Max meets his uncle named Ferris in a secret building <br> Max: hey unc where am I? <br> we are in N-tech inc  max?",
+        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, UNC, where am I? <br> Max asks. Uncle Ferris says, We're in N-tech Max.",
         "answers": {
             "a": "next page",
         }
     },
     "5_a": {
-        "dialogue": "should max follow unc ferris?",
+        "dialogue": "Should Max follow Unc Ferris? says the narrator",
         "answers": {
             "a": "yes and follow him to know what's happening to him",
             "b": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out  about max powers then talks to her brother ferris <br> tells max the orgin of his powers.<br> max freaks out abour his orgin <br>thats his dad is a alien from a anothor planet <br> doesn't feel like he belongs <br> max moves away to try to find out the truth <br>  max learns to accept who he is <br> max stays as a normal kid and never became a hero <br> max never fought badguys but has steel to keep his T.U.R.B.O. Energy in check <br> he's graudates from High School and has a girlfriend later in his life ",
