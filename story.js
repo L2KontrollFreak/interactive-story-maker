@@ -9,25 +9,24 @@ var answer = '';
 story_tell = {
     // create a intro dialogue
     "start": {
-        "dialogue": "You've arrived in the Max Steel universe. <br>You are Max McGraph, who recently relocated to a new town due to his mother's new job at DrazTech. <br> Max starts at a new school called Jolly Time High, and you quickly realize that he isn't your typical teenager. <br> Max meets his uncle and learns the truth about his superhuman abilities. <br> In order to prove he is a good hero to society, he must demonstrate his worth and responsibility. <br> It's entirely up to you... ",
+        "dialogue": "You've arrived in the world of Max Steel. Max McGraph is a young man who has recently moved to a new town due to his mother's new job at DrazTech. Max starts a new school called Jolly Time High, and it's clear right away that he's not your typical adolescent. Max meets his uncle and discovers the truth about his superpowers. He must demonstrate his worth and responsibility in order to prove he is a good hero to society. It's entirely your decision...",
         "answers": {
             "a": "next page",
         }
     },
     // start of a new page
     "0_a": {
-        "dialogue": "max goes to a new town",
+        "dialogue": "Max is relocating to a new town. and take a look at his new house.",
         "answers": {
             // decision
             "a": "yes:put stuff away and helps his mom put stuff away",
             "b": "Neutral: doesn't finish cleaning up",
             "c": "no:don't put stuff away in his room and Be lazy",
-            "a": "Next page",
         }
     },
 
     "1_a": {
-        "dialogue": "Goes to school",
+        "dialogue": "Max attends a new high school called Jolly Time High School.",
         "answers": {
             "a": " Max see new people and makes newfriends",
             "b": "No: Max chooses to be alone",
@@ -47,22 +46,22 @@ story_tell = {
     "3_a": {
         "dialogue": "When he visits his uncle, something unexpected occurs. <br> This unknown energy either explodes in an abandoned building or he manages to keep it contained for as long as he can. ",
         "answers": {
-            "a": "Yes:choose to explode in a abandoned building <br> and pass out from the explosion <br> wakes up",
-            "b": "No:max choose to hold it in as long as he could <br> then he's pass out <br> wake up",
+            "a": "Yes, choose to use this unknown energy to explode in an abandoned building and pass out as a result of the explosion. Max regains consciousness after being knocked unconscious by the expolsion he unintentionally caused.",
+            "b": "No, Max chose to keep it in this unknown energy for as long as he could, but then he'd pass out from the explosion, then wake up from the expolsion his accident caused.",
         }
     },
 
     "4_a": {
-        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, UNC, where am I? <br> Max asks. Uncle Ferris says, We're in N-tech Max.",
+        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, uncle, where am I? <br> Max asks. Uncle Ferris says, We're in N-tech Max.",
         "answers": {
             "a": "next page",
         }
     },
     "5_a": {
-        "dialogue": "Should Max follow Unc Ferris? says the narrator",
+        "dialogue": "Should Max follow Uncle Ferris? says the narrator",
         "answers": {
             "a": "yes and follow him to know what's happening to him",
-            "b": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out  about max powers then talks to her brother ferris <br> tells max the orgin of his powers.<br> max freaks out abour his orgin <br>thats his dad is a alien from a anothor planet <br> doesn't feel like he belongs <br> max moves away to try to find out the truth <br>  max learns to accept who he is <br> max stays as a normal kid and never became a hero <br> max never fought badguys but has steel to keep his T.U.R.B.O. Energy in check <br> he's graudates from High School and has a girlfriend later in his life ",
+            "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend."
         }
     },
     // transition to the yes side 

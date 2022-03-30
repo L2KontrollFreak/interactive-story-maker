@@ -7,14 +7,14 @@ var answer = '';
 //Evil Side
 evilStory_Tell = {
     "start": {
-        "dialogue": "You're in the world of Max Steel <br> You are Max McGraph who moved in to a new town because his mom new jobs in DrazTech <br> Max goes to a new school called Jolly Time highschool and you figure out that Max isn't your ordinary teenager <br> Max meets his uncle and finds out the truth about his superpowers<br> He has to prove he is worthy and responsible in order to prove he is a good hero to society <br> It's up to you...",
+        "dialogue": "You've arrived in the Max Steel universe. <br>You are Max McGraph, who recently relocated to a new town due to his mother's new job at DrazTech. <br> Max starts at a new school called Jolly Time High, and you quickly realize that he isn't your typical teenager. <br> Max meets his uncle and learns the truth about his superhuman abilities. <br> In order to prove he is a good hero to society, he must demonstrate his worth and responsibility. <br> It's entirely up to you...",
         "answers": {
             "a": "next page",
         }
     },
     // first chapter
     "1_a": {
-        "dialogue": "max goes to a new town",
+        "dialogue": "Max is relocating to a new town. and take a look at his new house.",
         "answers": {
             // decision
             "a": "yes:put stuff away and helps his mom put stuff away",
@@ -24,7 +24,7 @@ evilStory_Tell = {
         }
     },
     "2_a": {
-        "dialogue": "Goes to school",
+        "dialogue": "Max attends a new high school called Jolly Time High School.",
         "answers": {
             // decision
             "a": " Max see new people and makes new friends",
@@ -33,7 +33,7 @@ evilStory_Tell = {
         }
     },
     "3_a": {
-        "dialogue": "Max notices that someone is being bullied. Kirby, a young man, is the first person he meets.",
+        "dialogue": "Max notices a victim of bullying. Kirby is a guy he meets",
         "answers": {
             // decision
             "a": "Yes, put an end to the bullying and assist the student. Max takes him on a walk from school to his house.",
@@ -43,39 +43,39 @@ evilStory_Tell = {
 
     },
     "4_a": {
-        "dialogue": "Kirby thanks Max for standing up for him, explaining that he was fine with it and didn't want to fight, so he chose to stay calm. Max is pleased to see Kirby and his companions, but he is disappointed to see them depart. Max is saddened by the departure of his friends.",
+        "dialogue": "Kirby expresses his gratitude to Max for defending him, explaining that he was fine with it and didn't want to fight, so he chooses to remain calm. Max is happy to see Kirby and his companions, but he is sad to see them leave. Max is saddened by his friends' departure.",
         "answers": {
             "a": "Next page",
         }
     },
     // transition
     "5_a": {
-        "dialogue": "goes to see his uncle but something unexpected happen <br> explode this unknown energy in a abandoned building  or hold it in as long as he could ",
+        "dialogue": "When he visits his uncle, something unexpected occurs. <br> This unknown energy either explodes in an abandoned building or he manages to keep it contained for as long as he can.",
         "answers": {
             // decision should he explode in a abandoned building or hold it in as long as he could
-            "a": "Yes:choose to explode in a abandoned building <br> and pass out from the explosion <br> wakes up",
-            "b": "No:max choose to hold it in as long as he could <br> then he's pass out <br> wake up",
+            "a": "Yes, choose to use this unknown energy to explode in an abandoned building and pass out as a result of the explosion. Max regains consciousness after being knocked unconscious by the expolsion he unintentionally caused.",
+            "b": "No, Max chose to keep it in this unknown energy for as long as he could, but then he'd pass out from the explosion, then wake up from the expolsion his accident caused.",
         }
     },
     // transition
     "6_a": {
-        "dialogue": "Max meets his uncle named Ferris in a secret building <br> Max: hey unc where am I? <br> we are in N-tech inc  max?",
+        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, uncle, where am I? <br> Max asks. Uncle Ferris says, We're in N-tech Max.",
         "answers": {
             "b": "next page",
         }
     },
     // transition
     "7_a": {
-        "dialogue": "should max follow uncle ferris?",
+        "dialogue": "Should Max follow uncle Ferris? says the narrator",
         "answers": {
             // decision shou;d max follow uncle ferris
-            "a": "yes and follow him to know what's happening to him",
-            "b": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out  about max powers then talks to her brother ferris <br> tells max the origin of his powers.<br> max freaks out about his origin <br>that's his dad is a alien from a another planet <br> doesn't feel like he belongs <br> max moves away to try to find out the truth <br>  max learns to accept who he is <br> max stays as a normal kid and never became a hero <br> Max never fought bad guys but has steel to keep his T.U.R.B.O. Energy in check <br> he's graduates from High School and has a girlfriend later in his life ",
+            "a": "Yes and follow him to know what's happening to him",
+            "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the Steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend.",
         },
     },
     // transition
     "8_a": {
-        "dialogue": "after he bonds with the alien name steel <br> max ask steel a question <br> are you good or evil? <br> steel says I don't know to be honest some people are worth saving some aren't worth saving <br> max says so your basically anti-hero <br> they said its up to us to decide their faith who lives or died",
+        "dialogue": "After, he bonds with the alien name Steel. <br> Max ask Steel a question. <br> Are you good or evil? <br> Steel says, “I don't know to be honest some people are worth saving some aren't worth saving.” <br> Max says so your basically anti-hero. <br> They said its up to us to decide their faith who lives or died",
         "answers": {
             "c": "Next page to se the no side",
 
@@ -83,56 +83,56 @@ evilStory_Tell = {
     },
     // transition
     "9_a": {
-        "dialogue": "no and wants to go home <br> goes home <br> talk to his mom about it <br> mom finds out about max powers then talks to her brother ferris <br> tells max the origin of his powers <br> Max only think about power and not responsibility <br> they do a lie detector test on him",
+        "dialogue":"No, he says, adding that he wants to discuss it with his mother.  When Mom discovers Max's abilities, she consults her brother Ferris, who explains Max's origins to him. Max is only interested in power, not in taking responsibility. He was subjected to a lie detector test.",
         "answers": {
             "d": "Next page",
         }
         // transition to the next page
     },
     "10_a": {
-        "dialogue": "they want to see if he's worthy of that power",
+        "dialogue": "They want to see if he's worthy of that power",
         //decision to see if he's worthy of that power
         "answers": {
-            "a": "yes: to prove himself that he can be responsible <br> during 2 weeks he a good hero to society <br> the public trusts him as to being a superhero <br> he's stop crime and doesn't miss school <br> he's graduates from HighSchool and has a girlfriend later in his life",
-            "b": "No: does lie about the lie detector process but they didn't catch it that he was lying <br> he pretends to be a fake hero and begins to slowly becomes Evil <br> he teams up with bad guys and does crimes <br> but stops them afterwards to keep his hero image <br>max got a message from an alien named makino to join his quest to rule the galaxy",
+            "a": "Yes, to prove to himself that he is capable of being self-sufficient for two weeks. He is a good hero in the eyes of society. As a superhero, the public has faith in him. He's avoided crime, never misses school, and has a girlfriend later in life.",
+            "b": " No, He lies about the lie detector process, but they don't notice. He begins to act as if he is a fake hero and gradually turns evil. To maintain his hero image, he teams up with bad guys and commits crimes, but then stops them. An alien named Makino sent Max a message inviting him to join his quest to rule the galaxy.",
         }
     },
     // transition
     "11_a": {
-        "dialogue": "Max tells his girlfriend about his secret identity",
+        "dialogue": "Max reveals his secret identity to his girlfriend,",
         // decision: will she stay with or leave him
         "answers": {
-            "a": "yes: she stays with him because she cares for him",
-            "b": "no: she thinks he's too dangerous",
+            "a": "She stays with him because she loves him.",
+            "b": "No, she believes he is too dangerous.",
         }
     },
     // transition
     "12_a": {
-        "dialogue": "Max get sad and angry at himself because of his power and responsible he takes",
+        "dialogue": "Because of his power and the responsibility he bears, Max becomes sad and angry with himself.",
         // decision: does max want to give up being a hero and have a normal life again or does he want to become a baddie full time because he's doesn't get his respect
         "answers": {
-            "a": "yes: Max gives up his duty as being a hero and has to go back to his regular lifestyle.",
-            "b": "no: Max turns bad and unleashes his dark side and gives up his responsibility and becomes a full time villain for now...",
+            "a": "Yes, Max relinquishes his role as a hero and must return to his normal life.",
+            "b": "No: Max goes bad, unleashes his dark side, relinquishes his responsibilities, and for the time being, becomes a full-time villain...",
         }
     },
     // transition
     "13_a": {
-        "dialogue": "he teams up with bad guys and does crimes <br> but stops them afterwards to keep his hero image <br> max got a message from an alien named makino to join his quest to rule the galaxy <br> Max and steel accept his offer to rule the galaxy",
+        "dialogue": "He teams up with bad guys and does crimes <br> But stops them afterwards to keep his hero image <br> Max got a message from an alien named Makino to join his quest to rule the galaxy <br> Max and Steel accept his offer to rule the galaxy",
         "answers": {
-            "a": "yes: max and steel conquer the galaxy",
-            "b": "no: max feel guilty and tell steel we shouldn't conquer the galaxy instead save the world one last time and give up this life for the both of them <br> steel agrees with max and save the world one last time.",
+            "a": "yes: Max and Steel conquer the galaxy",
+            "b": "no: Max feel guilty and tell Steel we shouldn't conquer the galaxy instead save the world one last time and give up this life for the both of them <br> Steel agrees with max and save the world one last time.",
         }
     },
     // transition
     "14_a": {
-        "dialogue": "steel agrees with max and save the world one last time <br> after they save the galaxy from makino, they both sacrifice their lives to keep the galaxy safe from the forces of evil",
+        "dialogue": "Steel agrees with Max and once again saves the world. They both sacrifice their lives to keep the galaxy safe from the forces of evil after saving it from Makino",
         "answers": {
             "a": "Next page",
         }
     },
 
     "15_a": {
-        "dialogue": "thank you for your success on this hero journey!",
+        "dialogue": "Congratulations on your success on this hero journey!",
     }
 }
 // continue link    
