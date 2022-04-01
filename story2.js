@@ -3,9 +3,12 @@ var form = document.getElementById('MaxSteel');//elements with matching ids to s
 var submit = document.getElementById('continueButton');
 var reset = document.getElementById('resetButton');
 var answer = '';
-
+var copyrights = document.createElement('p');
+copyrights.innerHTML = "Copyright © 2019 by Darien and Lucas";
+document.body.appendChild(copyrights);
 //Evil Side
 evilStory_Tell = {
+
     "start": {
         "dialogue": "You've arrived in the Max Steel universe. <br>You are Max McGraph, who recently relocated to a new town due to his mother's new job at DrazTech. <br> Max starts at a new school called Jolly Time High, and you quickly realize that he isn't your typical teenager. <br> Max meets his uncle and learns the truth about his superhuman abilities. <br> In order to prove he is a good hero to society, he must demonstrate his worth and responsibility. <br> It's entirely up to you...",
         "answers": {
@@ -70,21 +73,16 @@ evilStory_Tell = {
         "answers": {
             // decision shou;d max follow uncle ferris
             "a": "Yes and follow him to know what's happening to him",
-            "b": "No, and he wants to return home.<br> Discuss it with his mother.<br> Mom learns of Max's abilities and tells her brother Ferris.<br> She explains the origins of Max's abilities to him.<br> Max is terrified of his origins, believing that his father is an extraterrestrial from another planet.<br> He isn't sure where he fits in.<br> Max takes a step back in order to discover the truth. <br> Max comes to terms with who he is.<br> Max never becomes a hero and remains a normal kid.<br> Max has never fought a bad guy, but he has the Steel to control his T.U.R.B.O. <br> energy. He graduated from high school and later in life had a girlfriend.",
+            "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the Steel to control his T.U.R.B.O.  energy. He graduated from high school and later in life had a girlfriend.",
         },
     },
-    // make a loop for the evil side for 7_a
-    "7_b": {
-        "dialogue": "thank you for your success in this story of MaxSteel",
-        "answers": {
-            // decision shou;d max follow uncle ferris
-            "a": "Yes and follow him to know what's happening to him",
-    // making a ending for the story from 7_a
-        },
-
+    // creating a link from 7_a "b" to 8_a "a"
+    "8_a": {
+        "dialogue": "Thank you for playing the game."
+    },
     // transition
     "9_a": {
-        "dialogue": "After, he bonds with the alien name Steel. <br> Max ask Steel a question. <br> Are you good or evil? <br> Steel says, “I don't know to be honest some people are worth saving some aren't worth saving.” <br> Max says so your basically anti-hero. <br> They said its up to us to decide their faith who lives or died",
+        "dialogue": "After, he bonds with the alien name Steel. Max ask Steel a question. <br> Are you good or evil? Steel says, “I don't know to be honest some people are worth saving some aren't worth saving.”  Max says so your basically anti-hero. They said its up to us to decide their faith who lives or died",
         "answers": {
             "c": "Next page to se the no side",
 
@@ -144,7 +142,6 @@ evilStory_Tell = {
         "dialogue": "Congratulations on your success on this hero journey!",
     }
 }
-};
 // continue link    
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
     answer = form.querySelectorAll('input[type=radio]:checked')[0].value; //a list of the document's elements that match the specified group of selectors.
@@ -183,3 +180,4 @@ continueButton.addEventListener('mouseup', function () { // this continueButton 
     populateForm(story);
 }
 );
+// create a copyrights for this story
