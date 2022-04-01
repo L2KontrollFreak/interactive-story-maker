@@ -70,11 +70,20 @@ evilStory_Tell = {
         "answers": {
             // decision shou;d max follow uncle ferris
             "a": "Yes and follow him to know what's happening to him",
-            "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the Steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend.",
+            "b": "No, and he wants to return home.<br> Discuss it with his mother.<br> Mom learns of Max's abilities and tells her brother Ferris.<br> She explains the origins of Max's abilities to him.<br> Max is terrified of his origins, believing that his father is an extraterrestrial from another planet.<br> He isn't sure where he fits in.<br> Max takes a step back in order to discover the truth. <br> Max comes to terms with who he is.<br> Max never becomes a hero and remains a normal kid.<br> Max has never fought a bad guy, but he has the Steel to control his T.U.R.B.O. <br> energy. He graduated from high school and later in life had a girlfriend.",
         },
     },
+    // make a loop for the evil side for 7_a
+    "7_b": {
+        "dialogue": "thank you for your success in this story of MaxSteel",
+        "answers": {
+            // decision shou;d max follow uncle ferris
+            "a": "Yes and follow him to know what's happening to him",
+    // making a ending for the story from 7_a
+        },
+
     // transition
-    "8_a": {
+    "9_a": {
         "dialogue": "After, he bonds with the alien name Steel. <br> Max ask Steel a question. <br> Are you good or evil? <br> Steel says, “I don't know to be honest some people are worth saving some aren't worth saving.” <br> Max says so your basically anti-hero. <br> They said its up to us to decide their faith who lives or died",
         "answers": {
             "c": "Next page to se the no side",
@@ -82,14 +91,14 @@ evilStory_Tell = {
         }
     },
     // transition
-    "9_a": {
-        "dialogue":"No, he says, adding that he wants to discuss it with his mother.  When Mom discovers Max's abilities, she consults her brother Ferris, who explains Max's origins to him. Max is only interested in power, not in taking responsibility. He was subjected to a lie detector test.",
+    "10_a": {
+        "dialogue":"No, he says, adding that he wants to discuss it with his mother. When Mom discovers Max's abilities, she consults her brother Ferris, who explains Max's origins to him. Max is only interested in power, not in taking responsibility. He was subjected to a lie detector test.",
         "answers": {
             "d": "Next page",
         }
         // transition to the next page
     },
-    "10_a": {
+    "11_a": {
         "dialogue": "They want to see if he's worthy of that power",
         //decision to see if he's worthy of that power
         "answers": {
@@ -98,7 +107,7 @@ evilStory_Tell = {
         }
     },
     // transition
-    "11_a": {
+    "12_a": {
         "dialogue": "Max reveals his secret identity to his girlfriend,",
         // decision: will she stay with or leave him
         "answers": {
@@ -107,7 +116,7 @@ evilStory_Tell = {
         }
     },
     // transition
-    "12_a": {
+    "13_a": {
         "dialogue": "Because of his power and the responsibility he bears, Max becomes sad and angry with himself.",
         // decision: does max want to give up being a hero and have a normal life again or does he want to become a baddie full time because he's doesn't get his respect
         "answers": {
@@ -116,7 +125,7 @@ evilStory_Tell = {
         }
     },
     // transition
-    "13_a": {
+    "14_a": {
         "dialogue": "He teams up with bad guys and does crimes <br> But stops them afterwards to keep his hero image <br> Max got a message from an alien named Makino to join his quest to rule the galaxy <br> Max and Steel accept his offer to rule the galaxy",
         "answers": {
             "a": "yes: Max and Steel conquer the galaxy",
@@ -124,17 +133,18 @@ evilStory_Tell = {
         }
     },
     // transition
-    "14_a": {
+    "15_a": {
         "dialogue": "Steel agrees with Max and once again saves the world. They both sacrifice their lives to keep the galaxy safe from the forces of evil after saving it from Makino",
         "answers": {
             "a": "Next page",
         }
     },
 
-    "15_a": {
+    "16_a": {
         "dialogue": "Congratulations on your success on this hero journey!",
     }
 }
+};
 // continue link    
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
     answer = form.querySelectorAll('input[type=radio]:checked')[0].value; //a list of the document's elements that match the specified group of selectors.
@@ -145,10 +155,12 @@ submit.addEventListener('mouseup', function () { //when a button on a pointing d
     }
 });
 
-// Reset button
-function resetForm() {
-    document.getElementById("restartButton").reset();
-};
+// Reset button for all pages
+reset.addEventListener('mouseup', function () {
+    story = 0;
+    populateForm(story);
+    console.log("Reset!");
+});
 
 // Generate answers from story
 function populateForm(story) {
@@ -166,3 +178,8 @@ function populateForm(story) {
 }
 
 populateForm('start');//set the form at the beginning
+continueButton.addEventListener('mouseup', function () { // this continueButton function make the continue button work immediately after the page loads
+    resetForm();
+    populateForm(story);
+}
+);

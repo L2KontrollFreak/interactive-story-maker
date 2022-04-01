@@ -9,7 +9,7 @@ var answer = '';
 story_tell = {
     // create a intro dialogue
     "start": {
-        "dialogue": "You've arrived in the world of Max Steel. Max McGraph is a young man who has recently moved to a new town due to his mother's new job at DrazTech. Max starts a new school called Jolly Time High, and it's clear right away that he's not your typical adolescent. Max meets his uncle and discovers the truth about his superpowers. He must demonstrate his worth and responsibility in order to prove he is a good hero to society. It's entirely your decision...",
+        "dialogue": "You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...",
         "answers": {
             "a": "next page",
         }
@@ -34,7 +34,7 @@ story_tell = {
         }
     },
     "2_a": {
-        "dialogue": "Max notices a victim of bullying. Kirby is a guy he meets",
+        "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets",
         "answers": {
             "a": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home ",
             "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
@@ -52,13 +52,13 @@ story_tell = {
     },
 
     "4_a": {
-        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, uncle, where am I? <br> Max asks. Uncle Ferris says, We're in N-tech Max.",
+        "dialogue": "Max meets his uncle, Ferris, in a hidden building. <br> Uncle, where have I gone?<br> Max inquires. We've arrived at N-Tech Max.<br>According to Uncle Ferris",
         "answers": {
             "a": "next page",
         }
     },
     "5_a": {
-        "dialogue": "Should Max follow Uncle Ferris? says the narrator",
+        "dialogue": "Is it wise for Max to follow Uncle Ferris?  the narrator says.",
         "answers": {
             "a": "yes and follow him to know what's happening to him",
             "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend."
@@ -66,7 +66,7 @@ story_tell = {
     },
     // transition to the yes side 
     "6_a": {
-        "dialogue": "Notices a strange object <br> What is the meaning of this round shape?<br> What exactly is this project that my father is working on?<br> When Max meets steel, he wants to bond with him in order to prevent him from exploding <br> Max accepts his invitation and forms a bond with him.",
+        "dialogue": "Notices a strange object. <br> What is the meaning of this round shape?<br> What exactly is this project that my father is working on?<br> the project that his father is working on suddenly become active and went towards Max to ask him about his question. <br> When Max meets steel, he wants to bond with him in order to prevent him from exploding <br> Max accepts his invitation and forms a bond with him.",
         "answers": {
             "a": "Next page",
 
@@ -103,7 +103,7 @@ submit.addEventListener('mouseup', function () { //when a button on a pointing d
     }
 });
 
-// Reset button
+// Reset button for all pages to restart the story
 function resetForm() {
     document.getElementById("restartButton").reset();
 };

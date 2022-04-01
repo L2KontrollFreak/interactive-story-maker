@@ -89,3 +89,8 @@ form input[type=radio]:checked + span{
     background-color: green;
     color: mediumspringgreen;
 }
+form input[type=radio]:checked + span:before{
+    content: '\2713';
+    font-size: 1.5em;
+    color: mediumspringgreen;
+}
