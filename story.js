@@ -16,29 +16,29 @@ story_tell = {
     },
     // start of a new page
     "0_a": {
-        "dialogue": "Max is relocating to a new town. and take a look at his new house.",
+        "dialogue": "Max is relocating to a new town and takes a look at his new house.",
         "answers": {
             // decision
-            "a": "yes:put stuff away and helps his mom put stuff away",
+            "a": "Yes: Put stuff away and helps his mom put stuff away.",
             "b": "Neutral: doesn't finish cleaning up",
-            "c": "no:don't put stuff away in his room and Be lazy",
+            "c": "No: Doesn't put stuff away in his room and be's lazy.",
         }
     },
 
     "1_a": {
         "dialogue": "Max attends a new high school called Jolly Time High School.",
         "answers": {
-            "a": " Max see new people and makes newfriends",
-            "b": "No: Max chooses to be alone",
+            "a": "Max see new people and makes newfriends.",
+            "b": "No: Max chooses to be alone.",
 
         }
     },
     "2_a": {
-        "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets",
+        "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
         "answers": {
-            "a": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home ",
+            "a": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
             "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
-            "c": "netural: just stand there do nothing",
+            "c": "Netural: just stand there do nothing.",
         }
 
     },
@@ -52,7 +52,7 @@ story_tell = {
     },
 
     "4_a": {
-        "dialogue": "Max meets his uncle, Ferris, in a hidden building. <br> Uncle, where have I gone?<br> Max inquires. We've arrived at N-Tech Max.<br>According to Uncle Ferris",
+        "dialogue": "Max meets his uncle, Ferris, in a hidden building. <br> Uncle, where have I gone?<br> Max inquires. We've arrived at N-Tech Max.<br>According to Uncle Ferris.",
         "answers": {
             "a": "next page",
         }
@@ -60,13 +60,13 @@ story_tell = {
     "5_a": {
         "dialogue": "Is it wise for Max to follow Uncle Ferris?  the narrator says.",
         "answers": {
-            "a": "yes and follow him to know what's happening to him",
+            "a": "Yes and follow him to know what's happening to him.",
             "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend."
         }
     },
     // transition to the yes side 
     "6_a": {
-        "dialogue": "Notices a strange object. <br> What is the meaning of this round shape?<br> What exactly is this project that my father is working on?<br> the project that his father is working on suddenly become active and went towards Max to ask him about his question. <br> When Max meets steel, he wants to bond with him in order to prevent him from exploding <br> Max accepts his invitation and forms a bond with him.",
+        "dialogue": "Notices a strange object. <br> What is the meaning of this round shape?<br> What exactly is this project that my father is working on?<br> The project that his father is working on suddenly become active and went towards Max to ask him about his question. <br> When Max meets Steel, he wants to bond with him in order to prevent him from exploding <br> Max accepts his invitation and forms a bond with him.",
         "answers": {
             "a": "Next page",
 
@@ -80,16 +80,16 @@ story_tell = {
     },
     // transition to the no side
     "8_a": {
-        "dialogue": "No, and he wants to return home.<br> He tells his mother about it.<br> Mom learns of Max's abilities and informs her brother Ferris.<br> Max is informed about the origins of his abilities.<br> Max is surprised by his origins and does not feel at home. <br> He never becomes a hero because he learns to accept himself as a normal kid.<br> He never fights bad guys, but he has the strength to control his T.U.R.B.O. energy. <br> He graduates from high school and goes on to have a girlfriend later in life.",
+        "dialogue": "No, and he wants to return home.<br> He tells his mother about it.<br> Mom learns of Max's and informs her brother Ferris.<br> Max is informed about the origins of his abilities.<br> Max is surprised by his origins and does not feel at home. <br> He never becomes a hero because he learns to accept himself as a normal kid.<br> He never fights bad guys, but he has the strength to control his T.U.R.B.O. energy. <br>He graduates from high school and goes on to have a girlfriend later in life.",
         "answers": {
             "a": "Next page",
         }
     },
     // create a end of story and also a restart button
     "9_a": {
-        "dialogue": "end of story <br> thank you for your success on this hero journey!",
+        "dialogue": "End of story <br> Thank you for your success on this hero journey!",
         "answers": {
-            "a": "  please click the restart button to restart the story",
+            "a": "Please click the restart button to restart the story",
         }
     }
 }

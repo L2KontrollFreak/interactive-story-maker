@@ -17,12 +17,12 @@ evilStory_Tell = {
     },
     // first chapter
     "1_a": {
-        "dialogue": "Max is relocating to a new town. and take a look at his new house.",
+        "dialogue": "Max is relocating to a new town and takes a look at his new house.",
         "answers": {
             // decision
-            "a": "yes:put stuff away and helps his mom put stuff away",
-            "b": "Neutral: doesn't finish cleaning up",
-            "c": "no:don't put stuff away in his room and Be lazy",
+            "a": "Yes: Puts stuff away and helps his mom put stuff away.",
+            "b": "Neutral: doesn't finish cleaning up.",
+            "c": "No: Doesn't put stuff away in his room and be's lazy.",
 
         }
     },
@@ -30,18 +30,18 @@ evilStory_Tell = {
         "dialogue": "Max attends a new high school called Jolly Time High School.",
         "answers": {
             // decision
-            "a": " Max see new people and makes new friends",
-            "b": "No: Max chooses to be alone",
+            "a": "Max see new people and makes new friends.",
+            "b": "No: Max chooses to be alone.",
 
         }
     },
     "3_a": {
-        "dialogue": "Max notices a victim of bullying. Kirby is a guy he meets",
+        "dialogue": "Max notices a victim of bullying. Kirby is a guy he meets.",
         "answers": {
             // decision
             "a": "Yes, put an end to the bullying and assist the student. Max takes him on a walk from school to his house.",
             "b": "No, don't do it; you'll regret this decision. He checks on the man to see if he's all right, but later discovers that he's bruised.",
-            "c": "netural: just stand there do nothing",
+            "c": "Netural: just stand there do nothing.",
         }
 
     },
@@ -82,7 +82,7 @@ evilStory_Tell = {
     },
     // transition
     "9_a": {
-        "dialogue": "After, he bonds with the alien name Steel. Max ask Steel a question. <br> Are you good or evil? Steel says, “I don't know to be honest some people are worth saving some aren't worth saving.”  Max says so your basically anti-hero. They said its up to us to decide their faith who lives or died",
+        "dialogue": "After, he bonds with the alien name Steel. Max ask Steel a question. <br> Are you good or evil? Steel says, “I don't know to be honest some people are worth saving some aren't worth saving.”  Max says so your basically anti-hero. They said its up to us to decide their faith who lives or died.",
         "answers": {
             "c": "Next page to se the no side",
 
@@ -90,23 +90,23 @@ evilStory_Tell = {
     },
     // transition
     "10_a": {
-        "dialogue":"No, he says, adding that he wants to discuss it with his mother. When Mom discovers Max's abilities, she consults her brother Ferris, who explains Max's origins to him. Max is only interested in power, not in taking responsibility. He was subjected to a lie detector test.",
+        "dialogue": "No, he says, adding that he wants to discuss it with his mother. When Mom discovers Max's abilities, she consults her brother Ferris, who explains Max's origins to him. Max is only interested in power, not in taking responsibility. He was subjected to a lie detector test.",
         "answers": {
             "d": "Next page",
         }
         // transition to the next page
     },
     "11_a": {
-        "dialogue": "They want to see if he's worthy of that power",
+        "dialogue": "They want to see if he's worthy of that power.",
         //decision to see if he's worthy of that power
         "answers": {
             "a": "Yes, to prove to himself that he is capable of being self-sufficient for two weeks. He is a good hero in the eyes of society. As a superhero, the public has faith in him. He's avoided crime, never misses school, and has a girlfriend later in life.",
-            "b": " No, He lies about the lie detector process, but they don't notice. He begins to act as if he is a fake hero and gradually turns evil. To maintain his hero image, he teams up with bad guys and commits crimes, but then stops them. An alien named Makino sent Max a message inviting him to join his quest to rule the galaxy.",
+            "b": "No, He lies about the lie detector process, but they don't notice. He begins to act as if he is a fake hero and gradually turns evil. To maintain his hero image, he teams up with bad guys and commits crimes, but then stops them. An alien named Makino sent Max a message inviting him to join his quest to rule the galaxy.",
         }
     },
     // transition
     "12_a": {
-        "dialogue": "Max reveals his secret identity to his girlfriend,",
+        "dialogue": "Max reveals his secret identity to his girlfriend.",
         // decision: will she stay with or leave him
         "answers": {
             "a": "She stays with him because she loves him.",
@@ -124,7 +124,7 @@ evilStory_Tell = {
     },
     // transition
     "14_a": {
-        "dialogue": "He teams up with bad guys and does crimes <br> But stops them afterwards to keep his hero image <br> Max got a message from an alien named Makino to join his quest to rule the galaxy <br> Max and Steel accept his offer to rule the galaxy",
+        "dialogue": "He teams up with bad guys and does crimes <br> But stops them afterwards to keep his hero image <br> Max got a message from an alien named Makino to join his quest to rule the galaxy <br> Max and Steel accept his offer to rule the galaxy.",
         "answers": {
             "a": "yes: Max and Steel conquer the galaxy",
             "b": "no: Max feel guilty and tell Steel we shouldn't conquer the galaxy instead save the world one last time and give up this life for the both of them <br> Steel agrees with max and save the world one last time.",
@@ -132,7 +132,7 @@ evilStory_Tell = {
     },
     // transition
     "15_a": {
-        "dialogue": "Steel agrees with Max and once again saves the world. They both sacrifice their lives to keep the galaxy safe from the forces of evil after saving it from Makino",
+        "dialogue": "Steel agrees with Max and once again saves the world. They both sacrifice their lives to keep the galaxy safe from the forces of evil after saving it from Makino.",
         "answers": {
             "a": "Next page",
         }
