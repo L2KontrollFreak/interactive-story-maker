@@ -12,7 +12,7 @@ evilStory_Tell = {
     "start": {
         "dialogue": "You've arrived in the Max Steel universe. <br>You are Max McGraph, who recently relocated to a new town due to his mother's new job at DrazTech. <br> Max starts at a new school called Jolly Time High, and you quickly realize that he isn't your typical teenager. <br> Max meets his uncle and learns the truth about his superhuman abilities. <br> In order to prove he is a good hero to society, he must demonstrate his worth and responsibility. <br> It's entirely up to you...",
         "answers": {
-            "a": "next page",
+            "a": "Next page",
         }
     },
     // first chapter
@@ -41,7 +41,7 @@ evilStory_Tell = {
             // decision
             "a": "Yes, put an end to the bullying and assist the student. Max takes him on a walk from school to his house.",
             "b": "No, don't do it; you'll regret this decision. He checks on the man to see if he's all right, but later discovers that he's bruised.",
-            "c": "Netural: just stand there do nothing.",
+            "c": "Netural: Just stand there do nothing.",
         }
 
     },
@@ -62,9 +62,9 @@ evilStory_Tell = {
     },
     // transition
     "6_a": {
-        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, uncle, where am I? <br> Max asks. Uncle Ferris says, We're in N-tech Max.",
+        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, uncle, where am I? Max asks. <br> Uncle Ferris says, We're in N-tech Max.",
         "answers": {
-            "b": "next page",
+            "b": "Next page",
         }
     },
     // transition
@@ -126,8 +126,8 @@ evilStory_Tell = {
     "14_a": {
         "dialogue": "He teams up with bad guys and does crimes <br> But stops them afterwards to keep his hero image <br> Max got a message from an alien named Makino to join his quest to rule the galaxy <br> Max and Steel accept his offer to rule the galaxy.",
         "answers": {
-            "a": "yes: Max and Steel conquer the galaxy",
-            "b": "no: Max feel guilty and tell Steel we shouldn't conquer the galaxy instead save the world one last time and give up this life for the both of them <br> Steel agrees with max and save the world one last time.",
+            "a": "Yes: Max and Steel conquer the galaxy",
+            "b": "No: Max feel guilty and tell Steel we shouldn't conquer the galaxy instead save the world one last time and give up this life for the both of them <br> Steel agrees with max and save the world one last time.",
         }
     },
     // transition
