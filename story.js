@@ -15,8 +15,10 @@ story_tell = {
         "dialogue": "You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...",
         "answers": {
             "1_a": "Next page",
+            "1_b": "quit game now",
         }
     },
+    
     // start of a new page
     "1_a": {
         "dialogue": "Max is relocating to a new town and takes a look at his new house.",
@@ -26,6 +28,10 @@ story_tell = {
             "Stand there and do nothing": "Neutral: Doesn't finish cleaning up",
             "No doesn't help his mother": "No: Doesn't put stuff away in his room and be's lazy.",
         }
+    },
+    "1_b": {
+        "dialogue": "you have quit the game please close this tab",
+        "answers": {}
     },
  "Stand there and do nothing":{
 "dialogue": "Max just doesn't want to do anything.",
@@ -41,7 +47,7 @@ story_tell = {
     },
    
 
-    }
+    },
     "2_a": {
         "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
         "answers": {
@@ -101,15 +107,16 @@ story_tell = {
             "a": "Please click the restart button to restart the story",
         }
     }
-}
+},
 // add a my temple of my own
 "": {
     "dialogue": "",
-    "answer": {
+    "answers": {
       "": " ",
       "": ""
     }
   },
+}
 
 // continue link
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
@@ -133,7 +140,7 @@ function populateForm(story) {
 
     for (var prop in current_story['answers']) {
         if (current_story['answers'].hasOwnProperty(prop)) { //method returns a boolean (true or false) indicating whether the object has the specified property as its own property
-            text += '<label><input type="radio" name="answer" value="" "" ""' + prop + '"/><span>' + current_story['answers'][prop] + '</span></label>';// adding answers to the story
+            text += '<label><input type="radio" name="answer" value=""' + prop + '"/><span>' + current_story['answers'][prop] + '</span></label>';// adding answers to the story
         }
     }
 
