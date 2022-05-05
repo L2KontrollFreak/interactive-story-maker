@@ -41,7 +41,7 @@ evilStory_Tell = {
             // decision
             "a": "Yes, put an end to the bullying and assist the student. Max takes him on a walk from school to his house.",
             "b": "No, don't do it; you'll regret this decision. He checks on the man to see if he's all right, but later discovers that he's bruised.",
-            "c": "Netural: Just stand there do nothing.",
+            "c": "Netural: Just stand there and do nothing.",
         }
 
     },
@@ -146,18 +146,16 @@ evilStory_Tell = {
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
     answer = form.querySelectorAll('input[type=radio]:checked')[0].value; //a list of the document's elements that match the specified group of selectors.
     if (answer) {
-        story++;//increment or add 1 to
-        populateForm(story + '_' + answer);//if a radio is checked populate our form with the answer
+        console.log(answer);
+        populateForm(answer);//if a radio is checked populate our form with the answer
         console.log("Story time!"); // Console log to make sure things are working
     }
 });
 
-// Reset button for all pages
-reset.addEventListener('mouseup', function () {
-    story = 0;
-    populateForm(story);
-    console.log("Reset!");
-});
+// Reset button for all pages to restart the story
+function resetForm() {
+    document.getElementById("restartButton").reset();
+};
 
 // Generate answers from story
 function populateForm(story) {
@@ -166,7 +164,7 @@ function populateForm(story) {
 
     for (var prop in current_story['answers']) {
         if (current_story['answers'].hasOwnProperty(prop)) { //method returns a boolean (true or false) indicating whether the object has the specified property as its own property
-            text += '<label><input type="radio" name="answer" value="a" "b" "c" "a" "b" "c" "a" "b' + prop + '"/><span>' + current_story['answers'][prop] + '</span></label>';// adding answers to the story
+            text += `<label><input type="radio" name="answer" value="${prop}"  "/><span> ${current_story['answers'][prop]} </span></label>`;// adding answers to the story
         }
     }
 
@@ -175,9 +173,3 @@ function populateForm(story) {
 }
 
 populateForm('start');//set the form at the beginning
-continueButton.addEventListener('mouseup', function () { // this continueButton function make the continue button work immediately after the page loads
-    resetForm();
-    populateForm(story);
-}
-);
-// create a copyrights for this story

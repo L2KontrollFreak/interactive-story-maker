@@ -10,50 +10,83 @@ document.body.appendChild(copyrights);
 //Good Side
 
 story_tell = {
+
     // create a intro dialogue
     "start": {
-        "dialogue": "You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...",
+        "dialogue": `<img src="https://via.placeholder.com/150" alt="placeholder"> You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...`,
         "answers": {
-            "1_a": "Next page",
-            "1_b": "quit game now",
+            "intro": "Next page",
         }
     },
-    
     // start of a new page
-    "1_a": {
+    "intro": {
         "dialogue": "Max is relocating to a new town and takes a look at his new house.",
         "answers": {
             // decision
-            "Yes go help out your mom": "Puts stuff away and helps his mom put stuff away.",
-            "Stand there and do nothing": "Neutral: Doesn't finish cleaning up",
-            "No doesn't help his mother": "No: Doesn't put stuff away in his room and be's lazy.",
+            "putAway": "Yes: Put stuff away and helps his mom put stuff away.",
+            "does nothing": "Neutral: Doesn't finish cleaning up",
+            "doesn't help out and be lazy": "No: Doesn't put stuff away in his room and be's lazy.",
         }
     },
-    "1_b": {
-        "dialogue": "you have quit the game please close this tab",
-        "answers": {}
-    },
- "Stand there and do nothing":{
-"dialogue": "Max just doesn't want to do anything.",
-"answers": {
 
-    "Yes go help out your mom": {
-        "dialogue": "Max help his mom to put stuff away.",
+    "putAway": {
+        "dialogue": "Puts away his clothes.",
         "answers": {
-            "should Max relax before school starts": "Max relaxes and goes to school later becuse he was tired from packing.",
-            " ShouldMax goes to school because he didn't want to relax": "Max goes to school and meet new friends on the way there.",
+            "Max is looking for his mom": "Max wants to know whether there is anything else he has to put away.",
+            "b": "No: Max chooses to be alone.",
 
         }
     },
-   
-
+    "Max is looking for his mom": {
+        "dialogue": "Max Mom says that there is nothing else he has to put away.",
+        "answers": {
+            "read a book to pass time": "Yes: Max reads a book to pass time.",
+            "plays some video game?": "Yes: Max plays a video game to pass the time.",
+        }
+    },
+    "read a book to pass time": {
+        "dialogue": "Max sees the time and stops reading and starts slowlying to go to bed.",
+        "answers": {
+            "oversleep": "Max oversleeps and is late for school and gets scolded by the teacher.",
+        }
+    },
+    "oversleep": {
+        "dialogue": "MAX WHAT IS YOUR EXCUSE FOR BEING LATE",
+        "answers": {
+            "Max says to the teacher": "The reason why he was late because he overslept and told why he over slept.",
+        }
+    },
+    "The reason why he was late because he overslept and told why he over slept": {
+        "dialogue": "The teacher decides his fate.",
+        "answers": {
+            "Max was lucky he got a warning": " Max was happy that he got a warning and hope he doesn't to it again.",
+            "Max did not get a warning": " Max, as a result you get a... detention",
+        }
+    },
+    "does nothing": {
+        "dialogue": "Just stands there.",
+        "answers": {
+            "goes to school": "he goes to school and meet new people.",
+        }
+    },
+    "doesn't help out and be lazy": {
+        "dialogue": "Doesn't help out and be lazy until his first day of school.",
+        "answers": {
+            "max goes to school": " max get his new schudule and goes to his first class and that's English.",
+        }
+    },
+    "goes to school": {
+        "dialogue": "Max meets a girl named Alexandria and says hi",
+        "answers": {
+            "Should Max ask her out.": "Max asks her out to hangout somewhere in the city"
+        }
     },
     "2_a": {
         "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
         "answers": {
-            "a": "Yes: stop the bullying and help the kid out <br> Max walks him from school to his home.",
-            "b": "No: leaves it's alone and later regrets <br> He checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
-            "c": "Netural: Just stand there do nothing.",
+            "a": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
+            "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
+            "c": "Netural: Just stand there and do nothing.",
         }
 
     },
@@ -107,23 +140,14 @@ story_tell = {
             "a": "Please click the restart button to restart the story",
         }
     }
-},
-// add a my temple of my own
-"": {
-    "dialogue": "",
-    "answers": {
-      "": " ",
-      "": ""
-    }
-  },
 }
 
 // continue link
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
     answer = form.querySelectorAll('input[type=radio]:checked')[0].value; //a list of the document's elements that match the specified group of selectors.
     if (answer) {
-        story++;//increment or add 1 to
-        populateForm(story + '_' + answer);//if a radio is checked populate our form with the answer
+        console.log(answer);
+        populateForm(answer);//if a radio is checked populate our form with the answer
         console.log("Story time!"); // Console log to make sure things are working
     }
 });
@@ -140,11 +164,11 @@ function populateForm(story) {
 
     for (var prop in current_story['answers']) {
         if (current_story['answers'].hasOwnProperty(prop)) { //method returns a boolean (true or false) indicating whether the object has the specified property as its own property
-            text += '<label><input type="radio" name="answer" value=""' + prop + '"/><span>' + current_story['answers'][prop] + '</span></label>';// adding answers to the story
+            text += `<label><input type="radio" name="answer" value="${prop}"  "/><span> ${current_story['answers'][prop]} </span></label>`;// adding answers to the story
         }
     }
 
-    form.querySelector('p').innerHTML = current_story.dialogue;//write questions to the p tag in the HTML
+    form.querySelector('div.txt').innerHTML = current_story.dialogue;//write questions to the p tag in the HTML
     form.querySelector('fieldset').innerHTML = text;//write answers to the fieldset 
 }
 
