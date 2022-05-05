@@ -24,24 +24,30 @@ story_tell = {
         "answers": {
             // decision
             "putAway": "Yes: Put stuff away and helps his mom put stuff away.",
-            "does nothing": "Neutral: Doesn't finish cleaning up",
-            "doesn't help out and be lazy": "No: Doesn't put stuff away in his room and be's lazy.",
+            "nothing": "Neutral: Doesn't finish cleaning up",
+            " noHelp out and be lazy": "No: Doesn't put stuff away in his room and be's lazy.",
         }
     },
 
     "putAway": {
         "dialogue": "Puts away his clothes.",
         "answers": {
-            "Max is looking for his mom": "Max wants to know whether there is anything else he has to put away.",
-            "b": "No: Max chooses to be alone.",
+            "looking for his mom": "Max wants to know whether there is anything else he has to put away.",
+            "stay in his room": "No: Max chooses to be alone in his new room.",
 
         }
     },
-    "Max is looking for his mom": {
+    "looking for his mom": {
         "dialogue": "Max Mom says that there is nothing else he has to put away.",
         "answers": {
             "read a book to pass time": "Yes: Max reads a book to pass time.",
             "plays some video game?": "Yes: Max plays a video game to pass the time.",
+        }
+    },
+    "stay in his room": {
+        "dialogue": "Max is alone in his new room and checking out the space he has.",
+        "answers": {
+            " stares at the wall": "Max stares at the wall and is not sure what to do.",
         }
     },
     "read a book to pass time": {
@@ -59,101 +65,132 @@ story_tell = {
     "The reason why he was late because he overslept and told why he over slept": {
         "dialogue": "The teacher decides his fate.",
         "answers": {
-            "Max was lucky he got a warning": " Max was happy that he got a warning and hope he doesn't to it again.",
-            "Max did not get a warning": " Max, as a result you get a... detention",
+            "Max was lucky he got a warning": "Max was happy that he got a warning and hope he doesn't to it again.",
+            "Max did not get a warning": "Max, as a result you get a... detention",
         }
     },
-    "does nothing": {
+    "nothing": {
         "dialogue": "Just stands there.",
         "answers": {
-            "goes to school": "he goes to school and meet new people.",
+            "noHelp out and be lazy": "he goes to school and meet new people.",
         }
     },
-    "doesn't help out and be lazy": {
+    "noHelp out and be lazy": {
         "dialogue": "Doesn't help out and be lazy until his first day of school.",
         "answers": {
-            "max goes to school": " max get his new schudule and goes to his first class and that's English.",
+            "meet someone by his desk": " max get his new schudule and goes to his first class and that's English.",
         }
     },
-    "goes to school": {
-        "dialogue": "Max meets a girl named Alexandria and says hi",
+    "meet someone by his desk": {
+        "dialogue": "Max meet someone by his desk named Alexandria.",
         "answers": {
-            "Should Max ask her out.": "Max asks her out to hangout somewhere in the city"
+            "ask her out": "Max chats with Alexandria for a bit then eventually ask her out to hangout.",
         }
     },
-    "2_a": {
-        "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
+    "ask her out": {
+        "dialogue": "Alexandria says yes to Max's request.",
         "answers": {
-            "a": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
-            "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
-            "c": "Netural: Just stand there and do nothing.",
-        }
-
-    },
-
-    "3_a": {
-        "dialogue": "When he visits his uncle, something unexpected occurs. <br> This unknown energy either explodes in an abandoned building or he manages to keep it contained for as long as he can. ",
-        "answers": {
-            "a": "Yes, choose to use this unknown energy to explode in an abandoned building and pass out as a result of the explosion. Max regains consciousness after being knocked unconscious by the expolsion he unintentionally caused.",
-            "b": "No, Max chose to keep it in this unknown energy for as long as he could, but then he'd pass out from the explosion, then wake up from the expolsion his accident caused.",
+            " Max is excited to hangout": "Max is excited to hangout with Alexandria.",
         }
     },
 
-    "4_a": {
-        "dialogue": "Max meets his uncle, Ferris, in a hidden building. <br> Uncle, where have I gone?<br> Max inquires. We've arrived at N-Tech Max.<br>According to Uncle Ferris.",
-        "answers": {
-            "a": "Next page",
-        }
-    },
-    "5_a": {
-        "dialogue": "Is it wise for Max to follow Uncle Ferris?  the narrator says.",
-        "answers": {
-            "a": "Yes and follow him to know what's happening to him.",
-            "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend."
-        }
-    },
-    // transition to the yes side 
-    "6_a": {
-        "dialogue": "Notices a strange object. <br> What is the meaning of this round shape?<br> What exactly is this project that my father is working on?<br> The project that his father is working on suddenly become active and went towards Max to ask him about his question. <br> When Max meets Steel, he wants to bond with him in order to prevent him from exploding <br> Max accepts his invitation and forms a bond with him.",
-        "answers": {
-            "a": "Next page",
+            "school": {
+                "dialogue": "Max goes to school and meets new people.",
+                "answers": {
+                    "class": "Max meets a new person and starts to talk to her.",
+                }
+            },
+            "class": {
+                "dialogue": "Max meets a girl named Alexandria and says hi",
+                "answers": {
+                    "Should Max ask her out.": "Max asks her out to hangout somewhere in the city"
+                }
+            },
+            "takes her out.": {
+                "dialogue": "Alexandria say yes and give max her phone number.",
+                "answers": {
+                    "Max is happy": "Max is happy that he can ask her out to hangout and walk arounds the school.",
+                }
+            },
+            "Max is happy": {
+                "dialogue": "Max was walking around the school and sees something around the corner.",
+                "answers": {
+                    "Max walks over only to witness bullying": "Max sense something was wrong",
+                }
+            },
+            "Max walks over only to witness bullying": {
+                "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
+                "answers": {
+                    "": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
+                    "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
+                    "c": "Netural: Just stand there and do nothing.",
+                }
 
+            },
+
+            "3_a": {
+                "dialogue": "When he visits his uncle, something unexpected occurs. <br> This unknown energy either explodes in an abandoned building or he manages to keep it contained for as long as he can. ",
+                "answers": {
+                    "a": "Yes, choose to use this unknown energy to explode in an abandoned building and pass out as a result of the explosion. Max regains consciousness after being knocked unconscious by the expolsion he unintentionally caused.",
+                    "b": "No, Max chose to keep it in this unknown energy for as long as he could, but then he'd pass out from the explosion, then wake up from the expolsion his accident caused.",
+                }
+            },
+
+            "4_a": {
+                "dialogue": "Max meets his uncle, Ferris, in a hidden building. <br> Uncle, where have I gone?<br> Max inquires. We've arrived at N-Tech Max.<br>According to Uncle Ferris.",
+                "answers": {
+                    "a": "Next page",
+                }
+            },
+            "5_a": {
+                "dialogue": "Is it wise for Max to follow Uncle Ferris?  the narrator says.",
+                "answers": {
+                    "a": "Yes and follow him to know what's happening to him.",
+                    "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend."
+                }
+            },
+            // transition to the yes side 
+            "6_a": {
+                "dialogue": "Notices a strange object. <br> What is the meaning of this round shape?<br> What exactly is this project that my father is working on?<br> The project that his father is working on suddenly become active and went towards Max to ask him about his question. <br> When Max meets Steel, he wants to bond with him in order to prevent him from exploding <br> Max accepts his invitation and forms a bond with him.",
+                "answers": {
+                    "a": "Next page",
+
+                }
+            },
+            "7_a": {
+                "dialogue": "Every morning, Max puts his newfound abilities to the test, and in the process, he encounters an adversary. <br> What are you? Max asks. <br> I'm an elementor! declares the unknown foe.",
+                "answers": {
+                    "a": "Next page",
+                }
+            },
+            // transition to the no side
+            "8_a": {
+                "dialogue": "No, and he wants to return home.<br> He tells his mother about it.<br> Mom learns of Max's and informs her brother Ferris.<br> Max is informed about the origins of his abilities.<br> Max is surprised by his origins and does not feel at home. <br> He never becomes a hero because he learns to accept himself as a normal kid.<br> He never fights bad guys, but he has the strength to control his T.U.R.B.O. energy. <br>He graduates from high school and goes on to have a girlfriend later in life.",
+                "answers": {
+                    "a": "Next page",
+                }
+            },
+            // create a end of story and also a restart button
+            "9_a": {
+                "dialogue": "End of story <br> Thank you for your success on this hero journey!",
+                "answers": {
+                    "a": "Please click the restart button to restart the story",
+                }
+            }
         }
-    },
-    "7_a": {
-        "dialogue": "Every morning, Max puts his newfound abilities to the test, and in the process, he encounters an adversary. <br> What are you? Max asks. <br> I'm an elementor! declares the unknown foe.",
-        "answers": {
-            "a": "Next page",
-        }
-    },
-    // transition to the no side
-    "8_a": {
-        "dialogue": "No, and he wants to return home.<br> He tells his mother about it.<br> Mom learns of Max's and informs her brother Ferris.<br> Max is informed about the origins of his abilities.<br> Max is surprised by his origins and does not feel at home. <br> He never becomes a hero because he learns to accept himself as a normal kid.<br> He never fights bad guys, but he has the strength to control his T.U.R.B.O. energy. <br>He graduates from high school and goes on to have a girlfriend later in life.",
-        "answers": {
-            "a": "Next page",
-        }
-    },
-    // create a end of story and also a restart button
-    "9_a": {
-        "dialogue": "End of story <br> Thank you for your success on this hero journey!",
-        "answers": {
-            "a": "Please click the restart button to restart the story",
-        }
-    }
-}
 
 // continue link
 submit.addEventListener('mouseup', function () { //when a button on a pointing device is released while the pointer is located inside it
-    answer = form.querySelectorAll('input[type=radio]:checked')[0].value; //a list of the document's elements that match the specified group of selectors.
-    if (answer) {
-        console.log(answer);
-        populateForm(answer);//if a radio is checked populate our form with the answer
-        console.log("Story time!"); // Console log to make sure things are working
-    }
-});
+            answer = form.querySelectorAll('input[type=radio]:checked')[0].value; //a list of the document's elements that match the specified group of selectors.
+            if (answer) {
+                console.log(answer);
+                populateForm(answer);//if a radio is checked populate our form with the answer
+                console.log("Story time!"); // Console log to make sure things are working
+            }
+        });
 
-// Reset button for all pages to restart the story
-function resetForm() {
+        // Reset button for all pages to restart the story
+        function resetForm() {
     document.getElementById("restartButton").reset();
 };
 

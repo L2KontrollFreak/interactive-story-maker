@@ -10,30 +10,119 @@ document.body.appendChild(copyrights);
 evilStory_Tell = {
 
     "start": {
-        "dialogue": "You've arrived in the Max Steel universe. <br>You are Max McGraph, who recently relocated to a new town due to his mother's new job at DrazTech. <br> Max starts at a new school called Jolly Time High, and you quickly realize that he isn't your typical teenager. <br> Max meets his uncle and learns the truth about his superhuman abilities. <br> In order to prove he is a good hero to society, he must demonstrate his worth and responsibility. <br> It's entirely up to you...",
+        "dialogue": `<img src="https://via.placeholder.com/150" alt="placeholder"> You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...`,
         "answers": {
-            "a": "Next page",
+            "intro": "Next page",
         }
     },
-    // first chapter
-    "1_a": {
+    // start of a new page
+    "intro": {
         "dialogue": "Max is relocating to a new town and takes a look at his new house.",
         "answers": {
             // decision
-            "a": "Yes: Puts stuff away and helps his mom put stuff away.",
-            "b": "Neutral: doesn't finish cleaning up.",
-            "c": "No: Doesn't put stuff away in his room and be's lazy.",
+            "putAway": "Yes: Put stuff away and helps his mom put stuff away.",
+            "nothing": "Neutral: Doesn't finish cleaning up",
+            " noHelp out and be lazy": "No: Doesn't put stuff away in his room and be's lazy.",
+        }
+    },
+
+    "putAway": {
+        "dialogue": "Puts away his clothes.",
+        "answers": {
+            "looking for his mom": "Max wants to know whether there is anything else he has to put away.",
+            "stay in his room": "No: Max chooses to be alone in his new room.",
 
         }
     },
-    "2_a": {
-        "dialogue": "Max attends a new high school called Jolly Time High School.",
+    "looking for his mom": {
+        "dialogue": "Max Mom says that there is nothing else he has to put away.",
         "answers": {
-            // decision
-            "a": "Max see new people and makes new friends.",
-            "b": "No: Max chooses to be alone.",
-
+            "read a book to pass time": "Yes: Max reads a book to pass time.",
+            "plays some video game?": "Yes: Max plays a video game to pass the time.",
         }
+    },
+    "stay in his room": {
+        "dialogue": "Max is alone in his new room and checking out the space he has.",
+        "answers": {
+            " stares at the wall": "Max stares at the wall and is not sure what to do.",
+        }
+    },
+    "read a book to pass time": {
+        "dialogue": "Max sees the time and stops reading and starts slowlying to go to bed.",
+        "answers": {
+            "oversleep": "Max oversleeps and is late for school and gets scolded by the teacher.",
+        }
+    },
+    "oversleep": {
+        "dialogue": "MAX WHAT IS YOUR EXCUSE FOR BEING LATE",
+        "answers": {
+            "Max says to the teacher": "The reason why he was late because he overslept and told why he over slept.",
+        }
+    },
+    "The reason why he was late because he overslept and told why he over slept": {
+        "dialogue": "The teacher decides his fate.",
+        "answers": {
+            "Max was lucky he got a warning": "Max was happy that he got a warning and hope he doesn't to it again.",
+            "Max did not get a warning": "Max, as a result you get a... detention",
+        }
+    },
+    "nothing": {
+        "dialogue": "Just stands there.",
+        "answers": {
+            "noHelp out and be lazy": "he goes to school and meet new people.",
+        }
+    },
+    "noHelp out and be lazy": {
+        "dialogue": "Doesn't help out and be lazy until his first day of school.",
+        "answers": {
+            "meet someone by his desk": " max get his new schudule and goes to his first class and that's English.",
+        }
+    },
+    "meet someone by his desk": {
+        "dialogue": "Max meet someone by his desk named Alexandria.",
+        "answers": {
+            "ask her out": "Max chats with Alexandria for a bit then eventually ask her out to hangout.",
+        }
+    },
+    "ask her out": {
+        "dialogue": "Alexandria says yes to Max's request.",
+        "answers": {
+            " Max is excited to hangout": "Max is excited to hangout with Alexandria.",
+        }
+    },
+
+    "school": {
+        "dialogue": "Max goes to school and meets new people.",
+        "answers": {
+            "class": "Max meets a new person and starts to talk to her.",
+        }
+    },
+    "class": {
+        "dialogue": "Max meets a girl named Alexandria and says hi",
+        "answers": {
+            "Should Max ask her out.": "Max asks her out to hangout somewhere in the city"
+        }
+    },
+    "takes her out.": {
+        "dialogue": "Alexandria say yes and give max her phone number.",
+        "answers": {
+            "Max is happy": "Max is happy that he can ask her out to hangout and walk arounds the school.",
+        }
+    },
+    "Max is happy": {
+        "dialogue": "Max was walking around the school and sees something around the corner.",
+        "answers": {
+            "Max walks over only to witness bullying": "Max sense something was wrong",
+        }
+    },
+    "Max walks over only to witness bullying": {
+        "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
+        "answers": {
+            "": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
+            "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
+            "c": "Netural: Just stand there and do nothing.",
+        }
+
     },
     "3_a": {
         "dialogue": "Max notices a victim of bullying. Kirby is a guy he meets.",
