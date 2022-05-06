@@ -4,13 +4,13 @@ var submit = document.getElementById('continueButton');
 var reset = document.getElementById('resetButton');
 var answer = '';
 var copyrights = document.createElement('p');
-copyrights.innerHTML = "Copyright © 2019 by Darien and Lucas";
+copyrights.innerHTML = "Copyright © 2022 by Darien and Lucas";
 document.body.appendChild(copyrights);
 //Evil Side
 evilStory_Tell = {
 
     "start": {
-        "dialogue": `<img src="https://via.placeholder.com/150" alt="placeholder"> You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...`,
+        "dialogue": "You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...`",
         "answers": {
             "intro": "Next page",
         }
@@ -20,7 +20,7 @@ evilStory_Tell = {
         "dialogue": "Max is relocating to a new town and takes a look at his new house.",
         "answers": {
             // decision
-            "putAway": "Yes: Put stuff away and helps his mom put stuff away.",
+            "putAway": "Yes: Put stuff away and helps his mom put stuff away.", //yes//
             "nothing": "Neutral: Doesn't finish cleaning up",
             " noHelp out and be lazy": "No: Doesn't put stuff away in his room and be's lazy.",
         }
@@ -29,13 +29,13 @@ evilStory_Tell = {
     "putAway": {
         "dialogue": "Puts away his clothes.",
         "answers": {
-            "looking for his mom": "Max wants to know whether there is anything else he has to put away.",
+            "looking for his mom": "Max wants to know whether there is anything else he has to put away.",// putAway
             "stay in his room": "No: Max chooses to be alone in his new room.",
 
         }
     },
     "looking for his mom": {
-        "dialogue": "Max Mom says that there is nothing else he has to put away.",
+        "dialogue": "Max Mom says that there is nothing else he has to put away.",//putAway
         "answers": {
             "read a book to pass time": "Yes: Max reads a book to pass time.",
             "plays some video game?": "Yes: Max plays a video game to pass the time.",
@@ -44,127 +44,205 @@ evilStory_Tell = {
     "stay in his room": {
         "dialogue": "Max is alone in his new room and checking out the space he has.",
         "answers": {
-            " stares at the wall": "Max stares at the wall and is not sure what to do.",
+            "stares at the wall": "Max stares at the wall and is not sure what to do.",
+        }
+    },
+    "stares at the wall": {
+        "dialogue": "Max is staring at the wall unitl he's falls asleep.",
+        "answers": {
+            "sleep": "Max falls asleep.",
+        }
+    },
+    "sleep": {
+        "dialogue": "Max wakes up and saw the time and relized he is late for school.",
+        "answers": {
+            "oversleep": "Max oversleeps and wakes up in the morning.",
         }
     },
     "read a book to pass time": {
-        "dialogue": "Max sees the time and stops reading and starts slowlying to go to bed.",
+        "dialogue": "Max sees the time and stops reading and starts slowlying to go to bed.", //putAway
         "answers": {
             "oversleep": "Max oversleeps and is late for school and gets scolded by the teacher.",
         }
     },
-    "oversleep": {
+    "oversleep": { // putAway
         "dialogue": "MAX WHAT IS YOUR EXCUSE FOR BEING LATE",
         "answers": {
-            "Max says to the teacher": "The reason why he was late because he overslept and told why he over slept.",
+            "the teacher": "The reason why he was late because he overslept and told why he over slept.",
         }
     },
-    "The reason why he was late because he overslept and told why he over slept": {
+    "the teacher": {
         "dialogue": "The teacher decides his fate.",
         "answers": {
-            "Max was lucky he got a warning": "Max was happy that he got a warning and hope he doesn't to it again.",
-            "Max did not get a warning": "Max, as a result you get a... detention",
+            "he got a warning": "Max was happy that he got a warning and hope he doesn't to it again.",
+            "did not get a warning": "Max, as a result you get a... detention",
         }
     },
-    "nothing": {
-        "dialogue": "Just stands there.",
+    "he got a warning": {
+        "dialogue": "Max got a warning because he overslept.",
         "answers": {
-            "noHelp out and be lazy": "he goes to school and meet new people.",
+            "Max takes his seat and is happy.": "Just take your seat and PLEASE be good the teacher says",
         }
     },
-    "noHelp out and be lazy": {
-        "dialogue": "Doesn't help out and be lazy until his first day of school.",
+    "did not get a warning": {
+        "dialogue": "Max did not get a warning and gets detention.",
         "answers": {
-            "meet someone by his desk": " max get his new schudule and goes to his first class and that's English.",
+            "angry": "Max is angry and tells the teacher to give a break.",
         }
     },
-    "meet someone by his desk": {
-        "dialogue": "Max meet someone by his desk named Alexandria.",
+    "angry": {
+        "dialogue": "Max is angry and walks out of the classroom.",
         "answers": {
-            "ask her out": "Max chats with Alexandria for a bit then eventually ask her out to hangout.",
+            "the right thing": "I'm sorry for being disruptful",
+            "the wrong thing": "Max runs out of the room and the police chase him",
         }
     },
-    "ask her out": {
-        "dialogue": "Alexandria says yes to Max's request.",
+    "the right thing": {
+        "dialogue": "the teacher accepts his aplogizes.",
         "answers": {
-            " Max is excited to hangout": "Max is excited to hangout with Alexandria.",
+            "max feels better now": "Max feels better now that the teacher accepts his aplogizes.",
         }
     },
+    "the wrong thing": {
+        "dialogue": "They contact Max's parents",
+        "answers": {
+            "trouble": "Max gets in a lot of trouble for it",
+        }
+    },
+    "max feels better now": {
+"dialogue": "the school ends and max goes home and he's happy its the weekend and be for the next day.", // the next day he meets his family
+"answers": {
+    "next day": "max wants to meet one of his family members.",
+}
+},
+"nothing": {
+    "dialogue": "Just stands there.",
+        "answers": {
+        "noHelp out and be lazy": "he goes to school and meet new people.",
+        }
+},
+"noHelp out and be lazy": {
+    "dialogue": "Doesn't help out and be lazy until his first day of school.",
+        "answers": {
+        "meet someone by his desk": " max get his new schudule and goes to his first class and that's English.",
+        }
+},
+"meet someone by his desk": {
+    "dialogue": "Max meet someone by his desk named Alexandria.",
+        "answers": {
+        "ask her out": "Max chats with Alexandria for a bit then eventually ask her out to hangout.",
+            "don't ask her out": "Max doesn't ask Alexandria out and just goes to school.",
+        }
+},
+"ask her out": {
+    "dialogue": "Alexandria says yes to Max's request.",
+        "answers": {
+        " Max is excited to hangout": "Max is excited to hangout with Alexandria.",
+        }
+},
+"don't ask her out": {
+    "dialogue": "Alexandria says no to Max's request.",
+        "answers": {
+        "Max is sad to not be able to hangout": "Max is sad to not be able to hangout with Alexandria.",
+        }
+},
+"school": {
+    "dialogue": "Max goes to school and meets new people.",
+        "answers": {
+        "class": "Max meets a new person and starts to talk to her.",
+        }
+},
+"class": {
+    "dialogue": "Max meets a girl named Alexandria and says hi",
+        "answers": {
+        "Should Max ask her out.": "Max asks her out to hangout somewhere in the city"
+    }
+},
+"takes her out.": {
+    "dialogue": "Alexandria say yes and give max her phone number.",
+        "answers": {
+        "happy": "Max is happy that he can ask her out to hangout and walk arounds the school.",
+        }
+},
+"happy": {
+    "dialogue": "Max was walking around the school and sees something around the corner.",
+        "answers": {
+        "witness bullying": "Max sense something was wrong",
+        }
+},
+"witness bullying": {
+    "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
+        "answers": {
+        "stop it": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
+            "let it contiune": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
+                "Netural": "Netural: Just stand there and do nothing.",
+        }
 
-    "school": {
-        "dialogue": "Max goes to school and meets new people.",
+},
+"stop it": {
+    "dialogue": "Max stops the bullying and helps the kid out.",
         "answers": {
-            "class": "Max meets a new person and starts to talk to her.",
+        "glad": "Max is glad that he helped the kid out.",
         }
-    },
-    "class": {
-        "dialogue": "Max meets a girl named Alexandria and says hi",
+},
+"let it contiune": {
+    "dialogue": "Max leaves it's alone and later regrets.",
         "answers": {
-            "Should Max ask her out.": "Max asks her out to hangout somewhere in the city"
+        "Max is sad": "Max is sad that he left the kid alone to get bully.",
         }
-    },
-    "takes her out.": {
-        "dialogue": "Alexandria say yes and give max her phone number.",
+},
+"Netural": {
+    "dialogue": "Max just stands there and do nothing.",
         "answers": {
-            "Max is happy": "Max is happy that he can ask her out to hangout and walk arounds the school.",
+        "leaves the scene": "Max leaves the scene and doesn't look back.",
         }
-    },
-    "Max is happy": {
-        "dialogue": "Max was walking around the school and sees something around the corner.",
+},
+"glad": {
+    "dialogue": "Max talks to the kid and tells him that he is glad that he helped the kid out<br> and ask what's his name.",
         "answers": {
-            "Max walks over only to witness bullying": "Max sense something was wrong",
+        "Kirby's name": "the guy name is Kirby.",
         }
-    },
-    "Max walks over only to witness bullying": {
-        "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
+},
+"Kirby's name": {
+    "dialogue": "max say nice to meet you kirby i will talk to you later.",
         "answers": {
-            "": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
-            "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
-            "c": "Netural: Just stand there and do nothing.",
+        "next day": "max wants to meet one of his family members.",
         }
+},
+"next day": {
+    "dialogue": "max wants to meet one of his family members.",
+        "answers": {
+        "meet": "max want to visit one of his family members.",
+        }
+},
 
-    },
-    "3_a": {
-        "dialogue": "Max notices a victim of bullying. Kirby is a guy he meets.",
+"meet": {
+    "dialogue": "When he visits his uncle, something unexpected occurs. <br> This unknown energy either explodes in an abandoned building or he manages to keep it contained for as long as he can. ",
         "answers": {
-            // decision
-            "a": "Yes, put an end to the bullying and assist the student. Max takes him on a walk from school to his house.",
-            "b": "No, don't do it; you'll regret this decision. He checks on the man to see if he's all right, but later discovers that he's bruised.",
-            "c": "Netural: Just stand there and do nothing.",
+        "blow up build": "Yes, choose to use this unknown energy to explode in an abandoned building and pass out as a result of the explosion. Max regains consciousness after being knocked unconscious by the expolsion he unintentionally caused.",
+            "pass out": "No, Max chose to keep it in this unknown energy for as long as he could, but then he'd pass out from the explosion, then wake up from the expolsion his accident caused.",
         }
+},
 
-    },
-    "4_a": {
-        "dialogue": "Kirby expresses his gratitude to Max for defending him, explaining that he was fine with it and didn't want to fight, so he chooses to remain calm. Max is happy to see Kirby and his companions, but he is sad to see them leave. Max is saddened by his friends' departure.",
+"blow up build": {
+    "dialogue": "Max meets his uncle, Ferris, in a hidden building. <br> Uncle, where have I gone?<br> Max inquires. We've arrived at N-Tech Max.<br>According to Uncle Ferris.",
         "answers": {
-            "a": "Next page",
+        "secret": "in a unknown location max starts to wake up.",
         }
-    },
-    // transition
-    "5_a": {
-        "dialogue": "When he visits his uncle, something unexpected occurs. <br> This unknown energy either explodes in an abandoned building or he manages to keep it contained for as long as he can.",
+},
+"pass out": {
+    "dialogue": "Max meets his uncle, Ferris, in a hidden building. <br> Uncle, where have I gone?<br> Max inquires. We've arrived at N-Tech Max.<br>According to Uncle Ferris.",
         "answers": {
-            // decision should he explode in a abandoned building or hold it in as long as he could
-            "a": "Yes, choose to use this unknown energy to explode in an abandoned building and pass out as a result of the explosion. Max regains consciousness after being knocked unconscious by the expolsion he unintentionally caused.",
-            "b": "No, Max chose to keep it in this unknown energy for as long as he could, but then he'd pass out from the explosion, then wake up from the expolsion his accident caused.",
+        "secret": "in a unknown location max starts to wake up.",
         }
-    },
-    // transition
-    "6_a": {
-        "dialogue": "In a hidden building, Max meets his uncle, Ferris. <br> Hey, uncle, where am I? Max asks. <br> Uncle Ferris says, We're in N-tech Max.",
+},
+"secret": {
+    "dialogue": "Is it wise for Max to follow Uncle Ferris?  the narrator says.",
         "answers": {
-            "b": "Next page",
-        }
-    },
-    // transition
-    "7_a": {
-        "dialogue": "Should Max follow uncle Ferris? says the narrator",
-        "answers": {
-            // decision shou;d max follow uncle ferris
-            "a": "Yes and follow him to know what's happening to him",
-            "b": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the Steel to control his T.U.R.B.O.  energy. He graduated from high school and later in life had a girlfriend.",
-        },
-    },
+        "Follows Ferris": "Yes and follow him to know what's happening to him.",
+            "doesn't follow ferris": "No, and he wants to return home. Discuss it with his mother. Mom learns of Max's abilities and tells her brother Ferris. She explains the origins of Max's abilities to him. Max is terrified of his origins, believing that his father is an extraterrestrial from another planet. He isn't sure where he fits in. Max takes a step back in order to discover the truth. Max comes to terms with who he is. Max never becomes a hero and remains a normal kid. Max has never fought a bad guy, but he has the steel to control his T.U.R.B.O. energy. He graduated from high school and later in life had a girlfriend."
+    }
+},
     // creating a link from 7_a "b" to 8_a "a"
     "8_a": {
         "dialogue": "Thank you for playing the game."
