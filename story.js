@@ -10,10 +10,10 @@ document.body.appendChild(copyrights);
 //Good Side
 
 story_tell = {
-
     // create a intro dialogue
-    "start": {
-        "dialogue": `<img src="https://via.placeholder.com/150" alt="placeholder"> You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...`,
+
+   "start": {
+        "dialogue": "You've arrived in Max Steel's world. Max McGraph is a young man who has recently relocated to a new town as a result of his mother's new position at DrazTech. Max begins his freshman year at Jolly Time High, and it is clear right away that he is not your typical adolescent. Max meets his uncle and learns the truth about his superhuman abilities. To prove he is a good hero to society, he must demonstrate his worth and responsibility. It's entirely up to you...`",
         "answers": {
             "intro": "Next page",
         }
@@ -109,23 +109,41 @@ story_tell = {
             "takes her out.": {
                 "dialogue": "Alexandria say yes and give max her phone number.",
                 "answers": {
-                    "Max is happy": "Max is happy that he can ask her out to hangout and walk arounds the school.",
+                    "happy": "Max is happy that he can ask her out to hangout and walk arounds the school.",
                 }
             },
-            "Max is happy": {
+             "happy": {
                 "dialogue": "Max was walking around the school and sees something around the corner.",
                 "answers": {
-                    "Max walks over only to witness bullying": "Max sense something was wrong",
+                    "witness bullying": "Max sense something was wrong",
                 }
             },
-            "Max walks over only to witness bullying": {
+            "witness bullying": {
                 "dialogue": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
                 "answers": {
-                    "": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
-                    "b": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
-                    "c": "Netural: Just stand there and do nothing.",
+                    "stop it": "Yes: stop the bullying and help the kid out <br> max walk him from school to his home.",
+                    "let it contiune": "No: leaves it's alone and later regrets <br> he checks the guy to see if he is okay but later sees he is bruised <br> Ask the guy is okay and what is his name?",
+                    "Netural": "Netural: Just stand there and do nothing.",
                 }
 
+            },
+            "stop it": {
+                "dialogue": "Max stops the bullying and helps the kid out.",
+                "answers": {
+                    "Max is glad": "Max is glad that he helped the kid out.",
+                }
+            },
+            "let it contiune": {
+                "dialogue": "Max leaves it's alone and later regrets.",
+                "answers": {
+                    "Max is sad": "Max is sad that he left the kid alone to get bully.",
+                }
+            },
+            "Netural": {
+                "dialogue": "Max just stands there and do nothing.",
+                "answers": {
+"leaves the scene": "Max leaves the scene and doesn't look back.",
+                }
             },
 
             "3_a": {
