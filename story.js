@@ -25,7 +25,7 @@ story_tell = {
             // decision
             "putAway": "Yes: Put stuff away and helps his mom put stuff away.", //yes//
             "nothing": "Neutral: Doesn't finish cleaning up",
-            " noHelp out and be lazy": "No: Doesn't put stuff away in his room and be's lazy.",
+            "noHelp": "No: Doesn't put stuff away in his room and be's lazy.",
         }
     },
 
@@ -136,7 +136,7 @@ story_tell = {
             "noHelp out and be lazy": "he goes to school and meet new people.",
         }
     },
-    "noHelp out and be lazy": {
+    "noHelp": {
         "dialogue": "Doesn't help out and be lazy until his first day of school.",
         "answers": {
             "meet someone by his desk": " max get his new schudule and goes to his first class and that's English.",
@@ -158,7 +158,7 @@ story_tell = {
     "don't ask her out": {
         "dialogue": "Alexandria says no to Max's request.",
         "answers": {
-            "Max is sad to not be able to hangout": "Max is sad to not be able to hangout with Alexandria.",
+            "witness bullying": "Max notices a victim of bullying.<br> Kirby is a guy he meets.",
         }
     },
     "school": {
@@ -204,6 +204,12 @@ story_tell = {
         "dialogue": "Max leaves it's alone and later regrets.",
         "answers": {
             "Max is sad": "Max is sad that he left the kid alone to get bully.",
+        }
+    },
+    "Max is sad": {
+        "dialogue": "Max was angry at himself for not helping him out.",
+        "answers": {
+            "next day": "Max wants to meet one of his family members.",
         }
     },
     "Netural": {
@@ -259,7 +265,7 @@ story_tell = {
         }
     },
     "doesn't follow ferris": {
-        "dialogue": "Thank you for your time for playing this game. if you want to play again, please refresh the page. or do you want to see the alternative ending?",
+        "dialogue": "Thank you for your time for playing this game. if you want to play again, please refresh the page.",
         "answers": {}
     },
     // transition to the yes side 
