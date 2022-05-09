@@ -84,7 +84,7 @@ story_tell = {
     "he got a warning": {
         "dialogue": "Max got a warning because he overslept.",
         "answers": {
-            "Max takes his seat and is happy.": "Just take your seat and PLEASE be good the teacher says",
+            "the right thing": "Just take your seat and PLEASE be good the teacher says",
         }
     },
     "did not get a warning": {
