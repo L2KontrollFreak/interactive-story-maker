@@ -4,7 +4,7 @@ var submit = document.getElementById('continueButton');
 var reset = document.getElementById('resetButton');
 var answer = '';
 var copyrights = document.createElement('p');
-copyrights.innerHTML = "Copyright © 2019 by Darien and Lucas";
+copyrights.innerHTML = "Copyright © 2022 by Darien and Lucas";
 document.body.appendChild(copyrights);
 
 //Good Side
